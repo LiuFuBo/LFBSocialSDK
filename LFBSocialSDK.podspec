@@ -62,8 +62,8 @@ Pod::Spec.new do |s|
 
   
   # 库中用到的框架或系统库 (没有用到可以没有)
-  s.framework = "TencentOpenAPI"
-  s.libraries = "libWeChatSDK","libWeiboSDK"
+  s.vendored_frameworks = 'TencentOpenAPI'
+  s.vendored_libraries  = 'libWeChatSDK','libWeiboSDK'
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
