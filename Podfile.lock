@@ -1,0 +1,28 @@
+PODS:
+  - Masonry (1.1.0)
+  - TencentOpenAPI (1.0.0)
+  - WechatOpenSDK (1.8.3)
+  - WeiboSDK (3.1.3)
+
+DEPENDENCIES:
+  - Masonry (~> 1.1.0)
+  - TencentOpenAPI (~> 1.0.0)
+  - WechatOpenSDK (~> 1.8.3)
+  - WeiboSDK (~> 3.1.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - TencentOpenAPI
+    - WechatOpenSDK
+    - WeiboSDK
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  TencentOpenAPI: ddc6fb0134b25c9078ccd27fd2259ed0cc30a49a
+  WechatOpenSDK: 3117412f8aafde4758cac1e8d20b93c67cafcfef
+  WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
+
+PODFILE CHECKSUM: a32bf84d3d5dc91c145559956d8b53ff36a6dbfc
+
+COCOAPODS: 1.5.3

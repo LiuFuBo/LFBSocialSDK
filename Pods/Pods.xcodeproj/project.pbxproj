@@ -1,0 +1,981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049B460E1DDF110E868627655CE0ADEA /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DAF93314AF063371800E1AD38420D2 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0BED362262BF36B8F775BC5810DD7EDE /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 877A671D1ADFD6D713552D98AC81CFCE /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		12B1110786810911F8F4D419021CF630 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D875643A419772528072C113CFEB17E /* MASConstraintMaker.m */; };
+		1EC8595D0E176DB06815789B6F7E35C1 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D4FC1FF86275B6F595A0A83951631521 /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		265ED3616AD8DC0516A45DE5473133DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
+		2A6EEFDF3EE2BBBF63F6063C3F6747A1 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B18E52B6CFBEA07D6132122225883D /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2AF8E8005BF2A4EBAC866F0A1AF5975C /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E0AFA94C4ADE35A9F5D620696E9B23 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2BBA747A4E46FFA08C5AFE5D3F6E9D7C /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F262A4CEAF0136C23A41BEF2CB2B7B11 /* NSArray+MASAdditions.m */; };
+		349A7678AD638D5FE26743AAF165A54A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E404AA6957590324067E330E0EC533 /* UIKit.framework */; };
+		54B8059F518A480388C60DD215371C17 /* Pods-LFBSocialSDKDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E6EC87857D9C4333A8D16762409BE /* Pods-LFBSocialSDKDemoUITests-dummy.m */; };
+		59E460AA853038A50B89ED33CC615FB4 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F73FEDF470EC4E725DEBBA0CFB6E08 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7157D66DCE09397047A7ECF10F15DCBF /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0533BBAC41AFFE58D3E9131C0EF55BE2 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D48232AE62FD0A1E4C4EEC4AE858209 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A297B512E4A9D88876A7AEE0FFCDD /* MASCompositeConstraint.m */; };
+		7FE1C36A12C885ECCD858E05C3685AF5 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB8F02FD510CE0A9077B3376A000BDB /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		847F1333BAAF5CE31A2AB8A4F57F57A9 /* Pods-LFBSocialSDKDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B798726A9A5E50A82CE49A8A35D7D0 /* Pods-LFBSocialSDKDemoTests-dummy.m */; };
+		91BEFCA99AED2127184DEE584255FBFE /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E8A4A74AC3155C5B38D2D29B6230AA /* MASViewAttribute.m */; };
+		9B5D721633B82BF8FE44D1A435434DF9 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BFA48234DEC57812A383D77DC6B218C /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9FD2FB144A530D0AB5A82A99CB4ED088 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 233C17A73165C3B76C89A25681FBA87D /* Masonry-dummy.m */; };
+		A2839EE1C3CFDBC573DF28B3EAAFF1B5 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C44857C44176049138BE8D9C6C65141 /* MASConstraint.m */; };
+		ADB022A853D74C0A9F48BC16D4EA59CF /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1D03F92869A80A52D6AC966E83687A /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B4BEBC36B586556BFDEDDB9F6D669239 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5369EC0663353C394F0425ED5F8FA8A4 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5BE571A0725C4506001C206FB69C2F7 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 33DC7678CFDC3457E6A81A147308C215 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC4BB4FAA82D4C4C439CE83F0C004392 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4EDA9BE5310E67C6B1976B553943B6 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		C0953168C5916BF83D7C7BDE01A2A300 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1B2C547E4D92827CD57085D01254AF /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D480E46833AD649D99DCC448EA9CE2CA /* Pods-LFBSocialSDKDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F1B978AB306AC7A39FB4288B9E970F /* Pods-LFBSocialSDKDemo-dummy.m */; };
+		E3312A275C1003F02C7386349FBE4195 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC1F27B3CA94C4519DCBB7B374D56FE /* View+MASAdditions.m */; };
+		E8D2B06760AD270146CF0C5CB07E2043 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = CD1F8E7A36DCBE05C3CD7D4BA5A62D38 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F57F3C8BF466FA98523222E68B41B77D /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD2B75EDBC84A2FA92A2E778BBC2A0 /* MASViewConstraint.m */; };
+		F6FCDB8385D380A13B3303853DDEEDAB /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CBFE4E0D2CE8D7275BBF28E9A65EB2 /* ViewController+MASAdditions.m */; };
+		FC2959986CFDEBB4308E36CF89A325B6 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 88438EAA218AD4FB539F67E7031F33CA /* MASLayoutConstraint.m */; };
+		FCD64586536B2C1974F92ACAF8447ACD /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2241B81F006738D9AEAF107F79C4F19F /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3560D785EE37EB0BA2F9563A48BD57A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A42EA465E764DD959C829C51404C08;
+			remoteInfo = Masonry;
+		};
+		691E93321139D9A421983C88429B115A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0456FF8C1B1C128501536CECE8BF7298;
+			remoteInfo = "Pods-LFBSocialSDKDemo";
+		};
+		D7174FE64289F91A0BEA4CB6F8EA15E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0456FF8C1B1C128501536CECE8BF7298;
+			remoteInfo = "Pods-LFBSocialSDKDemo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0533BBAC41AFFE58D3E9131C0EF55BE2 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		09E4FF7C370F22482E776B2832F96F1B /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboUser.h"; path = "libWeiboSDK/WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		0E1D03F92869A80A52D6AC966E83687A /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		12BE3AD705C5702C0BFC13E9137F4E2A /* WBSDKBasicButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKBasicButton.h; path = libWeiboSDK/WBSDKBasicButton.h; sourceTree = "<group>"; };
+		12E8A4A74AC3155C5B38D2D29B6230AA /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		1B3A297B512E4A9D88876A7AEE0FFCDD /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		1C44857C44176049138BE8D9C6C65141 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		2241B81F006738D9AEAF107F79C4F19F /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		233C17A73165C3B76C89A25681FBA87D /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		26329EA21529D1B7D21E5F77D643907D /* Pods-LFBSocialSDKDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFBSocialSDKDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		279E39ECB201DFFD5780877862724AFE /* Pods-LFBSocialSDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFBSocialSDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2D5692A1C216088AB313231920795E5E /* Pods-LFBSocialSDKDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFBSocialSDKDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D569701C7DA1294426338DBE4802BF9 /* Pods-LFBSocialSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFBSocialSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2E6DBE7F5D9B16D6D208925B19F8A882 /* libPods-LFBSocialSDKDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LFBSocialSDKDemoUITests.a"; path = "libPods-LFBSocialSDKDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3242AC25BF42D3EEB6F38BBE379C53A1 /* Pods-LFBSocialSDKDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFBSocialSDKDemoUITests-resources.sh"; sourceTree = "<group>"; };
+		33DC7678CFDC3457E6A81A147308C215 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		33F3E759C4D55B1EB6A50894F681B206 /* Pods-LFBSocialSDKDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFBSocialSDKDemoTests-resources.sh"; sourceTree = "<group>"; };
+		36029C413F6E67003348B383D65CCD91 /* Pods-LFBSocialSDKDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFBSocialSDKDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		36C22871DFD2E93B24C886ADBD402FDA /* Pods-LFBSocialSDKDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LFBSocialSDKDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		37465FBD32A513DA87BA7655E2760943 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		38A1D054657531AE29C2CCA9CA8AF154 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		3CC1F27B3CA94C4519DCBB7B374D56FE /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		44BC0B0630C5BE349E6246B0DD2D948B /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboToken.h"; path = "libWeiboSDK/WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		46F73FEDF470EC4E725DEBBA0CFB6E08 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		4D875643A419772528072C113CFEB17E /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		4DDEA1BA9459D8C0E9DBBD247096C962 /* Pods-LFBSocialSDKDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LFBSocialSDKDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		529D8229C26DC69E251F4376A9DABFCF /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = WeChatSDK1.8.3/WechatAuthSDK.h; sourceTree = "<group>"; };
+		52DAF93314AF063371800E1AD38420D2 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		5369EC0663353C394F0425ED5F8FA8A4 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		5885008F4DF0EC81C37E5716B0994889 /* libPods-LFBSocialSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LFBSocialSDKDemo.a"; path = "libPods-LFBSocialSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B18E52B6CFBEA07D6132122225883D /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		5A199431F1477630694D9429091EA99A /* Pods-LFBSocialSDKDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFBSocialSDKDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5BB8F02FD510CE0A9077B3376A000BDB /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		5D1B2C547E4D92827CD57085D01254AF /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		5D77E6D2A117E16F71D6A6CCCAF48CFA /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboGame.h"; path = "libWeiboSDK/WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
+		6C4EDA9BE5310E67C6B1976B553943B6 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		736E138A6AB9C4DB502C37AE9E7BF110 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		74E404AA6957590324067E330E0EC533 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		78FC65162FCF50F20F933A456F5E30DA /* Pods-LFBSocialSDKDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LFBSocialSDKDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7B4FC48559ED1372E7771D2F31CA8BB4 /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = libWeiboSDK/WBHttpRequest.h; sourceTree = "<group>"; };
+		877A671D1ADFD6D713552D98AC81CFCE /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		88438EAA218AD4FB539F67E7031F33CA /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		89B61B5655E6A93344743ADBACDCF891 /* Pods-LFBSocialSDKDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LFBSocialSDKDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8BFA48234DEC57812A383D77DC6B218C /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93B798726A9A5E50A82CE49A8A35D7D0 /* Pods-LFBSocialSDKDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LFBSocialSDKDemoTests-dummy.m"; sourceTree = "<group>"; };
+		96CBFE4E0D2CE8D7275BBF28E9A65EB2 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		98D61A194071B66D344A4FC2D9EDFE34 /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKRelationshipButton.h; path = libWeiboSDK/WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		9BDD5A27731B8FBD64B22DB4486B8DE1 /* WBSDKCommentButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKCommentButton.h; path = libWeiboSDK/WBSDKCommentButton.h; sourceTree = "<group>"; };
+		A0CD2B75EDBC84A2FA92A2E778BBC2A0 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		A4A82B14F0CC9FC103AECB24D6DFCD48 /* Pods-LFBSocialSDKDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFBSocialSDKDemo-frameworks.sh"; sourceTree = "<group>"; };
+		A5F5F3B4E1985F6633A21343F83609F2 /* Pods-LFBSocialSDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFBSocialSDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A75E6EC87857D9C4333A8D16762409BE /* Pods-LFBSocialSDKDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LFBSocialSDKDemoUITests-dummy.m"; sourceTree = "<group>"; };
+		A827E9369CEF94196857C16D5B917D74 /* Pods-LFBSocialSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFBSocialSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B2B30CA8369BF313D1377BF5A15ADF53 /* libWeiboSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
+		B4F1B978AB306AC7A39FB4288B9E970F /* Pods-LFBSocialSDKDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LFBSocialSDKDemo-dummy.m"; sourceTree = "<group>"; };
+		B506B8044B7919F0C55126B373C4D84B /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = WeChatSDK1.8.3/WXApiObject.h; sourceTree = "<group>"; };
+		B7E0AFA94C4ADE35A9F5D620696E9B23 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		BD1654F9E1455365CC3126AA5AF780E8 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = WeChatSDK1.8.3/WXApi.h; sourceTree = "<group>"; };
+		BE1782BD465CC82174A9145033B5E925 /* Pods-LFBSocialSDKDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LFBSocialSDKDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C39793191C3C698725DFCD75388B5FF8 /* libPods-LFBSocialSDKDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LFBSocialSDKDemoTests.a"; path = "libPods-LFBSocialSDKDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1F8E7A36DCBE05C3CD7D4BA5A62D38 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		CD70DDF6D2BDA1199B1D6F020C8DE11C /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = WeChatSDK1.8.3/libWeChatSDK.a; sourceTree = "<group>"; };
+		CF8528FBF54157AB653AEF6CE6530443 /* WeiboSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = libWeiboSDK/WeiboSDK.bundle; sourceTree = "<group>"; };
+		D0C7BC32A6345C9E9333786653A5C952 /* Pods-LFBSocialSDKDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LFBSocialSDKDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D4FC1FF86275B6F595A0A83951631521 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		D5DDAF9A123FDA8450DB1AD956816627 /* Pods-LFBSocialSDKDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFBSocialSDKDemo-resources.sh"; sourceTree = "<group>"; };
+		D6DF631E446CA0FFE471C62AD9AB8056 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		E25A06782DCFFB9B35B2AA9BE75033B7 /* WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboUser.h; path = libWeiboSDK/WeiboUser.h; sourceTree = "<group>"; };
+		E35CCE0E9D97C0B476D20AA8BE679577 /* WeiboSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboSDK.h; path = libWeiboSDK/WeiboSDK.h; sourceTree = "<group>"; };
+		E4CAB1B9601CE707EB88CB3DE2AE40BF /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboShare.h"; path = "libWeiboSDK/WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		EDCDE3556C1DF6CF50E73F250DB29869 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F262A4CEAF0136C23A41BEF2CB2B7B11 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		268147338C38AE524F2B8199FF1E8F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753808C353812ADBA8D8B5575125B631 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C95ADA1C4EF2FA5FF4EEC54DD65EAA3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265ED3616AD8DC0516A45DE5473133DD /* Foundation.framework in Frameworks */,
+				349A7678AD638D5FE26743AAF165A54A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D288B8AB49D79F3B59B554A82CB90B21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		023CC7C29A4F632AEBA1D06FE957DF21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E53829A348B61F7185227A9F1243CBD8 /* Masonry */,
+				63FCAFE58C4377A1BDB58EE12495C4F4 /* TencentOpenAPI */,
+				6BF1CB74BD9CA4EFD9CCB15ADCE23531 /* WechatOpenSDK */,
+				228F2EC3261B43A16A2A92D8882C210C /* WeiboSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		06CDD10DE71306278CF89108B3036DFD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */,
+				74E404AA6957590324067E330E0EC533 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		09ED156609B8C54604892448A1E480E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF8528FBF54157AB653AEF6CE6530443 /* WeiboSDK.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		166762568965BAC29620BABA28238DBE /* Pods-LFBSocialSDKDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7BC32A6345C9E9333786653A5C952 /* Pods-LFBSocialSDKDemoUITests-acknowledgements.markdown */,
+				BE1782BD465CC82174A9145033B5E925 /* Pods-LFBSocialSDKDemoUITests-acknowledgements.plist */,
+				A75E6EC87857D9C4333A8D16762409BE /* Pods-LFBSocialSDKDemoUITests-dummy.m */,
+				5A199431F1477630694D9429091EA99A /* Pods-LFBSocialSDKDemoUITests-frameworks.sh */,
+				3242AC25BF42D3EEB6F38BBE379C53A1 /* Pods-LFBSocialSDKDemoUITests-resources.sh */,
+				2D5692A1C216088AB313231920795E5E /* Pods-LFBSocialSDKDemoUITests.debug.xcconfig */,
+				279E39ECB201DFFD5780877862724AFE /* Pods-LFBSocialSDKDemoUITests.release.xcconfig */,
+			);
+			name = "Pods-LFBSocialSDKDemoUITests";
+			path = "Target Support Files/Pods-LFBSocialSDKDemoUITests";
+			sourceTree = "<group>";
+		};
+		228F2EC3261B43A16A2A92D8882C210C /* WeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7B4FC48559ED1372E7771D2F31CA8BB4 /* WBHttpRequest.h */,
+				5D77E6D2A117E16F71D6A6CCCAF48CFA /* WBHttpRequest+WeiboGame.h */,
+				E4CAB1B9601CE707EB88CB3DE2AE40BF /* WBHttpRequest+WeiboShare.h */,
+				44BC0B0630C5BE349E6246B0DD2D948B /* WBHttpRequest+WeiboToken.h */,
+				09E4FF7C370F22482E776B2832F96F1B /* WBHttpRequest+WeiboUser.h */,
+				12BE3AD705C5702C0BFC13E9137F4E2A /* WBSDKBasicButton.h */,
+				9BDD5A27731B8FBD64B22DB4486B8DE1 /* WBSDKCommentButton.h */,
+				98D61A194071B66D344A4FC2D9EDFE34 /* WBSDKRelationshipButton.h */,
+				E35CCE0E9D97C0B476D20AA8BE679577 /* WeiboSDK.h */,
+				E25A06782DCFFB9B35B2AA9BE75033B7 /* WeiboUser.h */,
+				E64FB0674113122057FEE1DD4F937970 /* Frameworks */,
+				09ED156609B8C54604892448A1E480E4 /* Resources */,
+			);
+			name = WeiboSDK;
+			path = WeiboSDK;
+			sourceTree = "<group>";
+		};
+		3A258E6DB0D5EB161BFEFD333BEA7AA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6DF631E446CA0FFE471C62AD9AB8056 /* TencentOpenAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06CDD10DE71306278CF89108B3036DFD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EB7D5B1F9515A6AC286C5146F0ADFBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD70DDF6D2BDA1199B1D6F020C8DE11C /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63FCAFE58C4377A1BDB58EE12495C4F4 /* TencentOpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				3A258E6DB0D5EB161BFEFD333BEA7AA3 /* Frameworks */,
+				CDD4E8D8F8D0A2D3831454CCEBB461D7 /* Resources */,
+			);
+			name = TencentOpenAPI;
+			path = TencentOpenAPI;
+			sourceTree = "<group>";
+		};
+		6BF1CB74BD9CA4EFD9CCB15ADCE23531 /* WechatOpenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				529D8229C26DC69E251F4376A9DABFCF /* WechatAuthSDK.h */,
+				BD1654F9E1455365CC3126AA5AF780E8 /* WXApi.h */,
+				B506B8044B7919F0C55126B373C4D84B /* WXApiObject.h */,
+				4EB7D5B1F9515A6AC286C5146F0ADFBF /* Frameworks */,
+			);
+			name = WechatOpenSDK;
+			path = WechatOpenSDK;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				023CC7C29A4F632AEBA1D06FE957DF21 /* Pods */,
+				A60E7588366AF036205D6175510AA20C /* Products */,
+				B463EF65E7DBDCB49BFF4DE2591825F2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A60E7588366AF036205D6175510AA20C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDCDE3556C1DF6CF50E73F250DB29869 /* libMasonry.a */,
+				5885008F4DF0EC81C37E5716B0994889 /* libPods-LFBSocialSDKDemo.a */,
+				C39793191C3C698725DFCD75388B5FF8 /* libPods-LFBSocialSDKDemoTests.a */,
+				2E6DBE7F5D9B16D6D208925B19F8A882 /* libPods-LFBSocialSDKDemoUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B05436C760B13CE3A61940AA98DB4A3F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				736E138A6AB9C4DB502C37AE9E7BF110 /* Masonry.xcconfig */,
+				233C17A73165C3B76C89A25681FBA87D /* Masonry-dummy.m */,
+				37465FBD32A513DA87BA7655E2760943 /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		B463EF65E7DBDCB49BFF4DE2591825F2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E29E87D7DE45DB3BB696D83A0C3DABCF /* Pods-LFBSocialSDKDemo */,
+				EB875B82C4811783236E16136C58C58A /* Pods-LFBSocialSDKDemoTests */,
+				166762568965BAC29620BABA28238DBE /* Pods-LFBSocialSDKDemoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CDD4E8D8F8D0A2D3831454CCEBB461D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38A1D054657531AE29C2CCA9CA8AF154 /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E29E87D7DE45DB3BB696D83A0C3DABCF /* Pods-LFBSocialSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				89B61B5655E6A93344743ADBACDCF891 /* Pods-LFBSocialSDKDemo-acknowledgements.markdown */,
+				36C22871DFD2E93B24C886ADBD402FDA /* Pods-LFBSocialSDKDemo-acknowledgements.plist */,
+				B4F1B978AB306AC7A39FB4288B9E970F /* Pods-LFBSocialSDKDemo-dummy.m */,
+				A4A82B14F0CC9FC103AECB24D6DFCD48 /* Pods-LFBSocialSDKDemo-frameworks.sh */,
+				D5DDAF9A123FDA8450DB1AD956816627 /* Pods-LFBSocialSDKDemo-resources.sh */,
+				A827E9369CEF94196857C16D5B917D74 /* Pods-LFBSocialSDKDemo.debug.xcconfig */,
+				2D569701C7DA1294426338DBE4802BF9 /* Pods-LFBSocialSDKDemo.release.xcconfig */,
+			);
+			name = "Pods-LFBSocialSDKDemo";
+			path = "Target Support Files/Pods-LFBSocialSDKDemo";
+			sourceTree = "<group>";
+		};
+		E53829A348B61F7185227A9F1243CBD8 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				0533BBAC41AFFE58D3E9131C0EF55BE2 /* MASCompositeConstraint.h */,
+				1B3A297B512E4A9D88876A7AEE0FFCDD /* MASCompositeConstraint.m */,
+				D4FC1FF86275B6F595A0A83951631521 /* MASConstraint.h */,
+				1C44857C44176049138BE8D9C6C65141 /* MASConstraint.m */,
+				33DC7678CFDC3457E6A81A147308C215 /* MASConstraint+Private.h */,
+				2241B81F006738D9AEAF107F79C4F19F /* MASConstraintMaker.h */,
+				4D875643A419772528072C113CFEB17E /* MASConstraintMaker.m */,
+				46F73FEDF470EC4E725DEBBA0CFB6E08 /* MASLayoutConstraint.h */,
+				88438EAA218AD4FB539F67E7031F33CA /* MASLayoutConstraint.m */,
+				5369EC0663353C394F0425ED5F8FA8A4 /* Masonry.h */,
+				CD1F8E7A36DCBE05C3CD7D4BA5A62D38 /* MASUtilities.h */,
+				52DAF93314AF063371800E1AD38420D2 /* MASViewAttribute.h */,
+				12E8A4A74AC3155C5B38D2D29B6230AA /* MASViewAttribute.m */,
+				5BB8F02FD510CE0A9077B3376A000BDB /* MASViewConstraint.h */,
+				A0CD2B75EDBC84A2FA92A2E778BBC2A0 /* MASViewConstraint.m */,
+				877A671D1ADFD6D713552D98AC81CFCE /* NSArray+MASAdditions.h */,
+				F262A4CEAF0136C23A41BEF2CB2B7B11 /* NSArray+MASAdditions.m */,
+				5D1B2C547E4D92827CD57085D01254AF /* NSArray+MASShorthandAdditions.h */,
+				B7E0AFA94C4ADE35A9F5D620696E9B23 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				6C4EDA9BE5310E67C6B1976B553943B6 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				0E1D03F92869A80A52D6AC966E83687A /* View+MASAdditions.h */,
+				3CC1F27B3CA94C4519DCBB7B374D56FE /* View+MASAdditions.m */,
+				59B18E52B6CFBEA07D6132122225883D /* View+MASShorthandAdditions.h */,
+				8BFA48234DEC57812A383D77DC6B218C /* ViewController+MASAdditions.h */,
+				96CBFE4E0D2CE8D7275BBF28E9A65EB2 /* ViewController+MASAdditions.m */,
+				B05436C760B13CE3A61940AA98DB4A3F /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		E64FB0674113122057FEE1DD4F937970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2B30CA8369BF313D1377BF5A15ADF53 /* libWeiboSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB875B82C4811783236E16136C58C58A /* Pods-LFBSocialSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				78FC65162FCF50F20F933A456F5E30DA /* Pods-LFBSocialSDKDemoTests-acknowledgements.markdown */,
+				4DDEA1BA9459D8C0E9DBBD247096C962 /* Pods-LFBSocialSDKDemoTests-acknowledgements.plist */,
+				93B798726A9A5E50A82CE49A8A35D7D0 /* Pods-LFBSocialSDKDemoTests-dummy.m */,
+				26329EA21529D1B7D21E5F77D643907D /* Pods-LFBSocialSDKDemoTests-frameworks.sh */,
+				33F3E759C4D55B1EB6A50894F681B206 /* Pods-LFBSocialSDKDemoTests-resources.sh */,
+				36029C413F6E67003348B383D65CCD91 /* Pods-LFBSocialSDKDemoTests.debug.xcconfig */,
+				A5F5F3B4E1985F6633A21343F83609F2 /* Pods-LFBSocialSDKDemoTests.release.xcconfig */,
+			);
+			name = "Pods-LFBSocialSDKDemoTests";
+			path = "Target Support Files/Pods-LFBSocialSDKDemoTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2D88655DF0DDA8C7AE6B596040EF98B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E4DB711891316DFEE11014B26E0C7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8990EEE1BB31A1D570F04DF35DD765DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7157D66DCE09397047A7ECF10F15DCBF /* MASCompositeConstraint.h in Headers */,
+				B5BE571A0725C4506001C206FB69C2F7 /* MASConstraint+Private.h in Headers */,
+				1EC8595D0E176DB06815789B6F7E35C1 /* MASConstraint.h in Headers */,
+				FCD64586536B2C1974F92ACAF8447ACD /* MASConstraintMaker.h in Headers */,
+				59E460AA853038A50B89ED33CC615FB4 /* MASLayoutConstraint.h in Headers */,
+				B4BEBC36B586556BFDEDDB9F6D669239 /* Masonry.h in Headers */,
+				E8D2B06760AD270146CF0C5CB07E2043 /* MASUtilities.h in Headers */,
+				049B460E1DDF110E868627655CE0ADEA /* MASViewAttribute.h in Headers */,
+				7FE1C36A12C885ECCD858E05C3685AF5 /* MASViewConstraint.h in Headers */,
+				0BED362262BF36B8F775BC5810DD7EDE /* NSArray+MASAdditions.h in Headers */,
+				C0953168C5916BF83D7C7BDE01A2A300 /* NSArray+MASShorthandAdditions.h in Headers */,
+				2AF8E8005BF2A4EBAC866F0A1AF5975C /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				ADB022A853D74C0A9F48BC16D4EA59CF /* View+MASAdditions.h in Headers */,
+				2A6EEFDF3EE2BBBF63F6063C3F6747A1 /* View+MASShorthandAdditions.h in Headers */,
+				9B5D721633B82BF8FE44D1A435434DF9 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68A31241F51AA3243B8975FB94DB2B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0456FF8C1B1C128501536CECE8BF7298 /* Pods-LFBSocialSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6762F94AD5BF2DDAB6FE90B30B8B1F15 /* Build configuration list for PBXNativeTarget "Pods-LFBSocialSDKDemo" */;
+			buildPhases = (
+				F68A31241F51AA3243B8975FB94DB2B9 /* Headers */,
+				F33B045EA81467A7B8035F4767F0B56F /* Sources */,
+				268147338C38AE524F2B8199FF1E8F90 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9EFFEC48CCC95C125B7CE3F7341A904 /* PBXTargetDependency */,
+			);
+			name = "Pods-LFBSocialSDKDemo";
+			productName = "Pods-LFBSocialSDKDemo";
+			productReference = 5885008F4DF0EC81C37E5716B0994889 /* libPods-LFBSocialSDKDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3451CD34BD0D7A8C6C1CCBEBBEBE2A0F /* Pods-LFBSocialSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC2FA79DBF6DC35A51AA3F43ACFC140 /* Build configuration list for PBXNativeTarget "Pods-LFBSocialSDKDemoTests" */;
+			buildPhases = (
+				57E4DB711891316DFEE11014B26E0C7C /* Headers */,
+				BD8EB6AF897B15E84BE88E7B2E52512F /* Sources */,
+				D288B8AB49D79F3B59B554A82CB90B21 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F649200A3DF14A3E9B01A66CED0B0F8 /* PBXTargetDependency */,
+			);
+			name = "Pods-LFBSocialSDKDemoTests";
+			productName = "Pods-LFBSocialSDKDemoTests";
+			productReference = C39793191C3C698725DFCD75388B5FF8 /* libPods-LFBSocialSDKDemoTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		40A42EA465E764DD959C829C51404C08 /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB00DFDEF804FAD5E3E20BC782ADAB8 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				8990EEE1BB31A1D570F04DF35DD765DD /* Headers */,
+				CD3F0F0348E695642F4232776EFC8AD5 /* Sources */,
+				C95ADA1C4EF2FA5FF4EEC54DD65EAA3C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = EDCDE3556C1DF6CF50E73F250DB29869 /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E1CDF1C332CEC253A55858DA5DA0A2A3 /* Pods-LFBSocialSDKDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61121AF3759B7A688D195EE8871E6D0B /* Build configuration list for PBXNativeTarget "Pods-LFBSocialSDKDemoUITests" */;
+			buildPhases = (
+				2D88655DF0DDA8C7AE6B596040EF98B8 /* Headers */,
+				E1384210FA0920D883293FE170EA91B7 /* Sources */,
+				753808C353812ADBA8D8B5575125B631 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CF5BE740854D418C0E0CBB6B36E5674 /* PBXTargetDependency */,
+			);
+			name = "Pods-LFBSocialSDKDemoUITests";
+			productName = "Pods-LFBSocialSDKDemoUITests";
+			productReference = 2E6DBE7F5D9B16D6D208925B19F8A882 /* libPods-LFBSocialSDKDemoUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A60E7588366AF036205D6175510AA20C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40A42EA465E764DD959C829C51404C08 /* Masonry */,
+				0456FF8C1B1C128501536CECE8BF7298 /* Pods-LFBSocialSDKDemo */,
+				3451CD34BD0D7A8C6C1CCBEBBEBE2A0F /* Pods-LFBSocialSDKDemoTests */,
+				E1CDF1C332CEC253A55858DA5DA0A2A3 /* Pods-LFBSocialSDKDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD8EB6AF897B15E84BE88E7B2E52512F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847F1333BAAF5CE31A2AB8A4F57F57A9 /* Pods-LFBSocialSDKDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3F0F0348E695642F4232776EFC8AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D48232AE62FD0A1E4C4EEC4AE858209 /* MASCompositeConstraint.m in Sources */,
+				A2839EE1C3CFDBC573DF28B3EAAFF1B5 /* MASConstraint.m in Sources */,
+				12B1110786810911F8F4D419021CF630 /* MASConstraintMaker.m in Sources */,
+				FC2959986CFDEBB4308E36CF89A325B6 /* MASLayoutConstraint.m in Sources */,
+				9FD2FB144A530D0AB5A82A99CB4ED088 /* Masonry-dummy.m in Sources */,
+				91BEFCA99AED2127184DEE584255FBFE /* MASViewAttribute.m in Sources */,
+				F57F3C8BF466FA98523222E68B41B77D /* MASViewConstraint.m in Sources */,
+				2BBA747A4E46FFA08C5AFE5D3F6E9D7C /* NSArray+MASAdditions.m in Sources */,
+				BC4BB4FAA82D4C4C439CE83F0C004392 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E3312A275C1003F02C7386349FBE4195 /* View+MASAdditions.m in Sources */,
+				F6FCDB8385D380A13B3303853DDEEDAB /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1384210FA0920D883293FE170EA91B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B8059F518A480388C60DD215371C17 /* Pods-LFBSocialSDKDemoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F33B045EA81467A7B8035F4767F0B56F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D480E46833AD649D99DCC448EA9CE2CA /* Pods-LFBSocialSDKDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CF5BE740854D418C0E0CBB6B36E5674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LFBSocialSDKDemo";
+			target = 0456FF8C1B1C128501536CECE8BF7298 /* Pods-LFBSocialSDKDemo */;
+			targetProxy = D7174FE64289F91A0BEA4CB6F8EA15E9 /* PBXContainerItemProxy */;
+		};
+		2F649200A3DF14A3E9B01A66CED0B0F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LFBSocialSDKDemo";
+			target = 0456FF8C1B1C128501536CECE8BF7298 /* Pods-LFBSocialSDKDemo */;
+			targetProxy = 691E93321139D9A421983C88429B115A /* PBXContainerItemProxy */;
+		};
+		E9EFFEC48CCC95C125B7CE3F7341A904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 40A42EA465E764DD959C829C51404C08 /* Masonry */;
+			targetProxy = 3560D785EE37EB0BA2F9563A48BD57A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10262E92B842F71D6F4FE2333643A40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 279E39ECB201DFFD5780877862724AFE /* Pods-LFBSocialSDKDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D3F48869EA6A0024D621535B6BC77C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 736E138A6AB9C4DB502C37AE9E7BF110 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C3275B6B7B8D5931913554A8B690B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F5F3B4E1985F6633A21343F83609F2 /* Pods-LFBSocialSDKDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D741B469B7E56870CA52B5F105BFC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36029C413F6E67003348B383D65CCD91 /* Pods-LFBSocialSDKDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A1A8D84C131C2994F7D9FE3C074435D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D569701C7DA1294426338DBE4802BF9 /* Pods-LFBSocialSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85B95B1234E227C814CCC2C7902D0916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A1703696568DF9BD620CAEB23BAF4BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5692A1C216088AB313231920795E5E /* Pods-LFBSocialSDKDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A254A1D5CAE40ABC54B15E5215496D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 736E138A6AB9C4DB502C37AE9E7BF110 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A73625DEBD810B78234FA1958C191C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BD0B1E7A1B33A8CD396AEB3491833011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A827E9369CEF94196857C16D5B917D74 /* Pods-LFBSocialSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73625DEBD810B78234FA1958C191C8C /* Debug */,
+				85B95B1234E227C814CCC2C7902D0916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61121AF3759B7A688D195EE8871E6D0B /* Build configuration list for PBXNativeTarget "Pods-LFBSocialSDKDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1703696568DF9BD620CAEB23BAF4BAC /* Debug */,
+				10262E92B842F71D6F4FE2333643A40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6762F94AD5BF2DDAB6FE90B30B8B1F15 /* Build configuration list for PBXNativeTarget "Pods-LFBSocialSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0B1E7A1B33A8CD396AEB3491833011 /* Debug */,
+				7A1A8D84C131C2994F7D9FE3C074435D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DC2FA79DBF6DC35A51AA3F43ACFC140 /* Build configuration list for PBXNativeTarget "Pods-LFBSocialSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D741B469B7E56870CA52B5F105BFC43 /* Debug */,
+				4C3275B6B7B8D5931913554A8B690B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB00DFDEF804FAD5E3E20BC782ADAB8 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3F48869EA6A0024D621535B6BC77C9 /* Debug */,
+				A254A1D5CAE40ABC54B15E5215496D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

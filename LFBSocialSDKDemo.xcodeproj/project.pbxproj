@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		130B2A38225DE5C6006B827E /* socialAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130B2A37225DE5C6006B827E /* socialAsset.xcassets */; };
+		1311AC9E21D22A9E008CA596 /* LFBShareMoudle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1311AC9D21D22A9E008CA596 /* LFBShareMoudle.m */; };
+		1311ACA121D22AD2008CA596 /* LFBShareMoudleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1311ACA021D22AD2008CA596 /* LFBShareMoudleView.m */; };
+		134A432A21C8930300F5B763 /* LFBChannelQQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432921C8930300F5B763 /* LFBChannelQQ.m */; };
+		134A432D21C8932800F5B763 /* LFBChannelQQZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432C21C8932800F5B763 /* LFBChannelQQZone.m */; };
+		134A433021C8941800F5B763 /* LFBChannelSinaWB.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432F21C8941800F5B763 /* LFBChannelSinaWB.m */; };
+		134A433A21C8A17500F5B763 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A433921C8A17500F5B763 /* libsqlite3.0.tbd */; };
+		134A433C21C8A18800F5B763 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A433B21C8A18800F5B763 /* libc++.tbd */; };
+		134A433E21C8A19000F5B763 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A433D21C8A19000F5B763 /* libz.tbd */; };
+		134A434021C8A19B00F5B763 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A433F21C8A19B00F5B763 /* SystemConfiguration.framework */; };
+		134A434221C8A1A400F5B763 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A434121C8A1A400F5B763 /* CoreTelephony.framework */; };
+		134A434621C8D82F00F5B763 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A434521C8D82E00F5B763 /* Security.framework */; };
+		134A434821C8D85900F5B763 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A434721C8D85900F5B763 /* libiconv.tbd */; };
+		134A434A21C8D86E00F5B763 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A434921C8D86E00F5B763 /* CoreGraphics.framework */; };
+		134A434C21C8F98D00F5B763 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A434B21C8F98D00F5B763 /* QuartzCore.framework */; };
+		134A434E21C8F99700F5B763 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A434D21C8F99700F5B763 /* ImageIO.framework */; };
+		134A435021C8F9A500F5B763 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A434F21C8F9A500F5B763 /* CoreText.framework */; };
+		134A435221C8F9B200F5B763 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A435121C8F9B200F5B763 /* UIKit.framework */; };
+		134A435421C8F9C000F5B763 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A435321C8F9C000F5B763 /* Foundation.framework */; };
+		135EE8E521CB9E00004A93AC /* LFBShareChannelConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 135EE8E421CB9E00004A93AC /* LFBShareChannelConfig.m */; };
+		138510BC21C7431600CE6309 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510BB21C7431600CE6309 /* AppDelegate.m */; };
+		138510BF21C7431600CE6309 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510BE21C7431600CE6309 /* ViewController.m */; };
+		138510C221C7431600CE6309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138510C021C7431600CE6309 /* Main.storyboard */; };
+		138510C421C7431700CE6309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138510C321C7431700CE6309 /* Assets.xcassets */; };
+		138510C721C7431700CE6309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138510C521C7431700CE6309 /* LaunchScreen.storyboard */; };
+		138510CA21C7431700CE6309 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510C921C7431700CE6309 /* main.m */; };
+		138510D421C7431700CE6309 /* LFBSocialSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510D321C7431700CE6309 /* LFBSocialSDKDemoTests.m */; };
+		138510DF21C7431700CE6309 /* LFBSocialSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510DE21C7431700CE6309 /* LFBSocialSDKDemoUITests.m */; };
+		138510EF21C743FD00CE6309 /* LFBChannelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510EE21C743FD00CE6309 /* LFBChannelBase.m */; };
+		138510F621C74B7D00CE6309 /* LFBShareInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510F421C74B2800CE6309 /* LFBShareInfo.m */; };
+		138510FA21C755FC00CE6309 /* LFBDataInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510F821C755D700CE6309 /* LFBDataInfo.m */; };
+		13B56F6221D35D0A0020EAF0 /* AppDelegate+Scheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B56F6121D35D0A0020EAF0 /* AppDelegate+Scheme.m */; };
+		13B56F6321D35E190020EAF0 /* LFBChannelPYQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432621C892E800F5B763 /* LFBChannelPYQ.m */; };
+		13B56F6421D35E2C0020EAF0 /* LFBChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432021C8904500F5B763 /* LFBChannelManager.m */; };
+		13B56F6521D35EE80020EAF0 /* LFBChannelWX.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432321C892CB00F5B763 /* LFBChannelWX.m */; };
+		13B9024921D48A01004353D9 /* LFBShareCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9024821D48A01004353D9 /* LFBShareCollectionCell.m */; };
+		13B9024C21D4B165004353D9 /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9024B21D4B165004353D9 /* UIColor+RGB.m */; };
+		13B9025221D4BEA3004353D9 /* LFBSharePlateforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9025121D4BEA3004353D9 /* LFBSharePlateforms.m */; };
+		13B9025421D4C98A004353D9 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 13B9025321D4C98A004353D9 /* readme.md */; };
+		13D0CDE221D46FE600D187A9 /* LFBShareCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D0CDE121D46FE600D187A9 /* LFBShareCollectionView.m */; };
+		288D6F20053DEE4CC3CEEE0F /* libPods-LFBSocialSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8DC5ADC4ED8121DF5EF123 /* libPods-LFBSocialSDKDemo.a */; };
+		5BB411A23A62B51B8DCEF467 /* libPods-LFBSocialSDKDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D8607BEA043E6456C6A607 /* libPods-LFBSocialSDKDemoTests.a */; };
+		ED72F8ED94A9D4936937A28D /* libPods-LFBSocialSDKDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B636AC177FE8AFBB8A0DDC /* libPods-LFBSocialSDKDemoUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		138510D021C7431700CE6309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 138510AF21C7431600CE6309 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138510B621C7431600CE6309;
+			remoteInfo = LFBSocialSDKDemo;
+		};
+		138510DB21C7431700CE6309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 138510AF21C7431600CE6309 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138510B621C7431600CE6309;
+			remoteInfo = LFBSocialSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D8607BEA043E6456C6A607 /* libPods-LFBSocialSDKDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFBSocialSDKDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B38CBBC455036B06AE556E3 /* Pods-LFBSocialSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFBSocialSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFBSocialSDKDemo/Pods-LFBSocialSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0F51A40CDB0902E785CF0273 /* Pods-LFBSocialSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFBSocialSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LFBSocialSDKDemo/Pods-LFBSocialSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		130B2A37225DE5C6006B827E /* socialAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = socialAsset.xcassets; sourceTree = "<group>"; };
+		1311AC9C21D22A9E008CA596 /* LFBShareMoudle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBShareMoudle.h; sourceTree = "<group>"; };
+		1311AC9D21D22A9E008CA596 /* LFBShareMoudle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBShareMoudle.m; sourceTree = "<group>"; };
+		1311AC9F21D22AD2008CA596 /* LFBShareMoudleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareMoudleView.h; sourceTree = "<group>"; };
+		1311ACA021D22AD2008CA596 /* LFBShareMoudleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareMoudleView.m; sourceTree = "<group>"; };
+		1311ACA221D22C08008CA596 /* LFBShareDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareDefine.h; sourceTree = "<group>"; };
+		134A431E21C88C3800F5B763 /* LFBOpProcessProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBOpProcessProtocol.h; sourceTree = "<group>"; };
+		134A431F21C8904500F5B763 /* LFBChannelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelManager.h; sourceTree = "<group>"; };
+		134A432021C8904500F5B763 /* LFBChannelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelManager.m; sourceTree = "<group>"; };
+		134A432221C892CB00F5B763 /* LFBChannelWX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelWX.h; sourceTree = "<group>"; };
+		134A432321C892CB00F5B763 /* LFBChannelWX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelWX.m; sourceTree = "<group>"; };
+		134A432521C892E800F5B763 /* LFBChannelPYQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelPYQ.h; sourceTree = "<group>"; };
+		134A432621C892E800F5B763 /* LFBChannelPYQ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelPYQ.m; sourceTree = "<group>"; };
+		134A432821C8930300F5B763 /* LFBChannelQQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelQQ.h; sourceTree = "<group>"; };
+		134A432921C8930300F5B763 /* LFBChannelQQ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelQQ.m; sourceTree = "<group>"; };
+		134A432B21C8932800F5B763 /* LFBChannelQQZone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelQQZone.h; sourceTree = "<group>"; };
+		134A432C21C8932800F5B763 /* LFBChannelQQZone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelQQZone.m; sourceTree = "<group>"; };
+		134A432E21C8941800F5B763 /* LFBChannelSinaWB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelSinaWB.h; sourceTree = "<group>"; };
+		134A432F21C8941800F5B763 /* LFBChannelSinaWB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelSinaWB.m; sourceTree = "<group>"; };
+		134A433921C8A17500F5B763 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		134A433B21C8A18800F5B763 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		134A433D21C8A19000F5B763 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		134A433F21C8A19B00F5B763 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		134A434121C8A1A400F5B763 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		134A434521C8D82E00F5B763 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		134A434721C8D85900F5B763 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		134A434921C8D86E00F5B763 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		134A434B21C8F98D00F5B763 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		134A434D21C8F99700F5B763 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		134A434F21C8F9A500F5B763 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		134A435121C8F9B200F5B763 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		134A435321C8F9C000F5B763 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		135EE8E321CB9E00004A93AC /* LFBShareChannelConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareChannelConfig.h; sourceTree = "<group>"; };
+		135EE8E421CB9E00004A93AC /* LFBShareChannelConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareChannelConfig.m; sourceTree = "<group>"; };
+		138510B721C7431600CE6309 /* LFBSocialSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LFBSocialSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		138510BA21C7431600CE6309 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		138510BB21C7431600CE6309 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		138510BD21C7431600CE6309 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		138510BE21C7431600CE6309 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		138510C121C7431600CE6309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		138510C321C7431700CE6309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		138510C621C7431700CE6309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		138510C821C7431700CE6309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		138510C921C7431700CE6309 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		138510CF21C7431700CE6309 /* LFBSocialSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFBSocialSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		138510D321C7431700CE6309 /* LFBSocialSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBSocialSDKDemoTests.m; sourceTree = "<group>"; };
+		138510D521C7431700CE6309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		138510DA21C7431700CE6309 /* LFBSocialSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFBSocialSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		138510DE21C7431700CE6309 /* LFBSocialSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBSocialSDKDemoUITests.m; sourceTree = "<group>"; };
+		138510E021C7431700CE6309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		138510ED21C743FD00CE6309 /* LFBChannelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelBase.h; sourceTree = "<group>"; };
+		138510EE21C743FD00CE6309 /* LFBChannelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelBase.m; sourceTree = "<group>"; };
+		138510F021C7446C00CE6309 /* LFBChannelHeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelHeaderFile.h; sourceTree = "<group>"; };
+		138510F321C74B2800CE6309 /* LFBShareInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareInfo.h; sourceTree = "<group>"; };
+		138510F421C74B2800CE6309 /* LFBShareInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareInfo.m; sourceTree = "<group>"; };
+		138510F721C755D700CE6309 /* LFBDataInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBDataInfo.h; sourceTree = "<group>"; };
+		138510F821C755D700CE6309 /* LFBDataInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBDataInfo.m; sourceTree = "<group>"; };
+		13B56F6021D35D0A0020EAF0 /* AppDelegate+Scheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Scheme.h"; sourceTree = "<group>"; };
+		13B56F6121D35D0A0020EAF0 /* AppDelegate+Scheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Scheme.m"; sourceTree = "<group>"; };
+		13B9024721D48A01004353D9 /* LFBShareCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareCollectionCell.h; sourceTree = "<group>"; };
+		13B9024821D48A01004353D9 /* LFBShareCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareCollectionCell.m; sourceTree = "<group>"; };
+		13B9024A21D4B165004353D9 /* UIColor+RGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
+		13B9024B21D4B165004353D9 /* UIColor+RGB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
+		13B9025021D4BEA3004353D9 /* LFBSharePlateforms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBSharePlateforms.h; sourceTree = "<group>"; };
+		13B9025121D4BEA3004353D9 /* LFBSharePlateforms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBSharePlateforms.m; sourceTree = "<group>"; };
+		13B9025321D4C98A004353D9 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		13D0CDE021D46FE600D187A9 /* LFBShareCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareCollectionView.h; sourceTree = "<group>"; };
+		13D0CDE121D46FE600D187A9 /* LFBShareCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareCollectionView.m; sourceTree = "<group>"; };
+		18B636AC177FE8AFBB8A0DDC /* libPods-LFBSocialSDKDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFBSocialSDKDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F0413B5DF75F508A5A48A2 /* Pods-LFBSocialSDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFBSocialSDKDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFBSocialSDKDemoTests/Pods-LFBSocialSDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		27C162E186924D244D6F6511 /* Pods-LFBSocialSDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFBSocialSDKDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFBSocialSDKDemoUITests/Pods-LFBSocialSDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9ED967E6648B58C4A24C7B60 /* Pods-LFBSocialSDKDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFBSocialSDKDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LFBSocialSDKDemoUITests/Pods-LFBSocialSDKDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC8DC5ADC4ED8121DF5EF123 /* libPods-LFBSocialSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFBSocialSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80E5C73BB42CA78A60CADE7 /* Pods-LFBSocialSDKDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFBSocialSDKDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LFBSocialSDKDemoTests/Pods-LFBSocialSDKDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		138510B421C7431600CE6309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134A435421C8F9C000F5B763 /* Foundation.framework in Frameworks */,
+				134A435221C8F9B200F5B763 /* UIKit.framework in Frameworks */,
+				134A435021C8F9A500F5B763 /* CoreText.framework in Frameworks */,
+				134A434E21C8F99700F5B763 /* ImageIO.framework in Frameworks */,
+				134A434C21C8F98D00F5B763 /* QuartzCore.framework in Frameworks */,
+				134A433E21C8A19000F5B763 /* libz.tbd in Frameworks */,
+				134A434A21C8D86E00F5B763 /* CoreGraphics.framework in Frameworks */,
+				134A434821C8D85900F5B763 /* libiconv.tbd in Frameworks */,
+				134A434621C8D82F00F5B763 /* Security.framework in Frameworks */,
+				134A434221C8A1A400F5B763 /* CoreTelephony.framework in Frameworks */,
+				134A434021C8A19B00F5B763 /* SystemConfiguration.framework in Frameworks */,
+				134A433C21C8A18800F5B763 /* libc++.tbd in Frameworks */,
+				134A433A21C8A17500F5B763 /* libsqlite3.0.tbd in Frameworks */,
+				288D6F20053DEE4CC3CEEE0F /* libPods-LFBSocialSDKDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138510CC21C7431700CE6309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB411A23A62B51B8DCEF467 /* libPods-LFBSocialSDKDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138510D721C7431700CE6309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED72F8ED94A9D4936937A28D /* libPods-LFBSocialSDKDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1311AC9B21D22A9E008CA596 /* LFBShareMoudle */ = {
+			isa = PBXGroup;
+			children = (
+				1311ACA221D22C08008CA596 /* LFBShareDefine.h */,
+				13B9025021D4BEA3004353D9 /* LFBSharePlateforms.h */,
+				13B9025121D4BEA3004353D9 /* LFBSharePlateforms.m */,
+				1311AC9C21D22A9E008CA596 /* LFBShareMoudle.h */,
+				1311AC9D21D22A9E008CA596 /* LFBShareMoudle.m */,
+				1311AC9F21D22AD2008CA596 /* LFBShareMoudleView.h */,
+				1311ACA021D22AD2008CA596 /* LFBShareMoudleView.m */,
+				13D0CDE021D46FE600D187A9 /* LFBShareCollectionView.h */,
+				13D0CDE121D46FE600D187A9 /* LFBShareCollectionView.m */,
+				13B9024721D48A01004353D9 /* LFBShareCollectionCell.h */,
+				13B9024821D48A01004353D9 /* LFBShareCollectionCell.m */,
+				13B9024A21D4B165004353D9 /* UIColor+RGB.h */,
+				13B9024B21D4B165004353D9 /* UIColor+RGB.m */,
+			);
+			path = LFBShareMoudle;
+			sourceTree = "<group>";
+		};
+		138510AE21C7431600CE6309 = {
+			isa = PBXGroup;
+			children = (
+				138510B921C7431600CE6309 /* LFBSocialSDKDemo */,
+				138510D221C7431700CE6309 /* LFBSocialSDKDemoTests */,
+				138510DD21C7431700CE6309 /* LFBSocialSDKDemoUITests */,
+				138510B821C7431600CE6309 /* Products */,
+				6F3E0C3EE7DE64D8D1720A8B /* Pods */,
+				C5EEE9FBC4BD90DA88D5C774 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		138510B821C7431600CE6309 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				138510B721C7431600CE6309 /* LFBSocialSDKDemo.app */,
+				138510CF21C7431700CE6309 /* LFBSocialSDKDemoTests.xctest */,
+				138510DA21C7431700CE6309 /* LFBSocialSDKDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		138510B921C7431600CE6309 /* LFBSocialSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				138510BA21C7431600CE6309 /* AppDelegate.h */,
+				138510BB21C7431600CE6309 /* AppDelegate.m */,
+				13B56F6021D35D0A0020EAF0 /* AppDelegate+Scheme.h */,
+				13B56F6121D35D0A0020EAF0 /* AppDelegate+Scheme.m */,
+				138510BD21C7431600CE6309 /* ViewController.h */,
+				138510BE21C7431600CE6309 /* ViewController.m */,
+				138510EC21C7438500CE6309 /* LFBSocialSDK */,
+				138510C021C7431600CE6309 /* Main.storyboard */,
+				138510C321C7431700CE6309 /* Assets.xcassets */,
+				138510C521C7431700CE6309 /* LaunchScreen.storyboard */,
+				138510C821C7431700CE6309 /* Info.plist */,
+				138510C921C7431700CE6309 /* main.m */,
+			);
+			path = LFBSocialSDKDemo;
+			sourceTree = "<group>";
+		};
+		138510D221C7431700CE6309 /* LFBSocialSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				138510D321C7431700CE6309 /* LFBSocialSDKDemoTests.m */,
+				138510D521C7431700CE6309 /* Info.plist */,
+			);
+			path = LFBSocialSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		138510DD21C7431700CE6309 /* LFBSocialSDKDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				138510DE21C7431700CE6309 /* LFBSocialSDKDemoUITests.m */,
+				138510E021C7431700CE6309 /* Info.plist */,
+			);
+			path = LFBSocialSDKDemoUITests;
+			sourceTree = "<group>";
+		};
+		138510EC21C7438500CE6309 /* LFBSocialSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1311AC9B21D22A9E008CA596 /* LFBShareMoudle */,
+				138510ED21C743FD00CE6309 /* LFBChannelBase.h */,
+				138510EE21C743FD00CE6309 /* LFBChannelBase.m */,
+				134A431F21C8904500F5B763 /* LFBChannelManager.h */,
+				134A432021C8904500F5B763 /* LFBChannelManager.m */,
+				135EE8E321CB9E00004A93AC /* LFBShareChannelConfig.h */,
+				135EE8E421CB9E00004A93AC /* LFBShareChannelConfig.m */,
+				138510F021C7446C00CE6309 /* LFBChannelHeaderFile.h */,
+				134A431E21C88C3800F5B763 /* LFBOpProcessProtocol.h */,
+				134A432221C892CB00F5B763 /* LFBChannelWX.h */,
+				134A432321C892CB00F5B763 /* LFBChannelWX.m */,
+				134A432521C892E800F5B763 /* LFBChannelPYQ.h */,
+				134A432621C892E800F5B763 /* LFBChannelPYQ.m */,
+				134A432821C8930300F5B763 /* LFBChannelQQ.h */,
+				134A432921C8930300F5B763 /* LFBChannelQQ.m */,
+				134A432B21C8932800F5B763 /* LFBChannelQQZone.h */,
+				134A432C21C8932800F5B763 /* LFBChannelQQZone.m */,
+				134A432E21C8941800F5B763 /* LFBChannelSinaWB.h */,
+				134A432F21C8941800F5B763 /* LFBChannelSinaWB.m */,
+				138510F721C755D700CE6309 /* LFBDataInfo.h */,
+				138510F821C755D700CE6309 /* LFBDataInfo.m */,
+				138510F321C74B2800CE6309 /* LFBShareInfo.h */,
+				138510F421C74B2800CE6309 /* LFBShareInfo.m */,
+				130B2A37225DE5C6006B827E /* socialAsset.xcassets */,
+				13B9025321D4C98A004353D9 /* readme.md */,
+			);
+			path = LFBSocialSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		6F3E0C3EE7DE64D8D1720A8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F51A40CDB0902E785CF0273 /* Pods-LFBSocialSDKDemo.debug.xcconfig */,
+				0B38CBBC455036B06AE556E3 /* Pods-LFBSocialSDKDemo.release.xcconfig */,
+				F80E5C73BB42CA78A60CADE7 /* Pods-LFBSocialSDKDemoTests.debug.xcconfig */,
+				23F0413B5DF75F508A5A48A2 /* Pods-LFBSocialSDKDemoTests.release.xcconfig */,
+				9ED967E6648B58C4A24C7B60 /* Pods-LFBSocialSDKDemoUITests.debug.xcconfig */,
+				27C162E186924D244D6F6511 /* Pods-LFBSocialSDKDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5EEE9FBC4BD90DA88D5C774 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				134A435321C8F9C000F5B763 /* Foundation.framework */,
+				134A435121C8F9B200F5B763 /* UIKit.framework */,
+				134A434F21C8F9A500F5B763 /* CoreText.framework */,
+				134A434D21C8F99700F5B763 /* ImageIO.framework */,
+				134A434B21C8F98D00F5B763 /* QuartzCore.framework */,
+				134A434921C8D86E00F5B763 /* CoreGraphics.framework */,
+				134A434721C8D85900F5B763 /* libiconv.tbd */,
+				134A434521C8D82E00F5B763 /* Security.framework */,
+				134A434121C8A1A400F5B763 /* CoreTelephony.framework */,
+				134A433F21C8A19B00F5B763 /* SystemConfiguration.framework */,
+				134A433D21C8A19000F5B763 /* libz.tbd */,
+				134A433B21C8A18800F5B763 /* libc++.tbd */,
+				134A433921C8A17500F5B763 /* libsqlite3.0.tbd */,
+				BC8DC5ADC4ED8121DF5EF123 /* libPods-LFBSocialSDKDemo.a */,
+				03D8607BEA043E6456C6A607 /* libPods-LFBSocialSDKDemoTests.a */,
+				18B636AC177FE8AFBB8A0DDC /* libPods-LFBSocialSDKDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		138510B621C7431600CE6309 /* LFBSocialSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 138510E321C7431700CE6309 /* Build configuration list for PBXNativeTarget "LFBSocialSDKDemo" */;
+			buildPhases = (
+				835D9069273662D603B56719 /* [CP] Check Pods Manifest.lock */,
+				138510B321C7431600CE6309 /* Sources */,
+				138510B421C7431600CE6309 /* Frameworks */,
+				138510B521C7431600CE6309 /* Resources */,
+				626C4363784CCA1D89099C96 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LFBSocialSDKDemo;
+			productName = LFBSocialSDKDemo;
+			productReference = 138510B721C7431600CE6309 /* LFBSocialSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		138510CE21C7431700CE6309 /* LFBSocialSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 138510E621C7431700CE6309 /* Build configuration list for PBXNativeTarget "LFBSocialSDKDemoTests" */;
+			buildPhases = (
+				861E133738BCDF0CB4D8883E /* [CP] Check Pods Manifest.lock */,
+				138510CB21C7431700CE6309 /* Sources */,
+				138510CC21C7431700CE6309 /* Frameworks */,
+				138510CD21C7431700CE6309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				138510D121C7431700CE6309 /* PBXTargetDependency */,
+			);
+			name = LFBSocialSDKDemoTests;
+			productName = LFBSocialSDKDemoTests;
+			productReference = 138510CF21C7431700CE6309 /* LFBSocialSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		138510D921C7431700CE6309 /* LFBSocialSDKDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 138510E921C7431700CE6309 /* Build configuration list for PBXNativeTarget "LFBSocialSDKDemoUITests" */;
+			buildPhases = (
+				5F0CADFFE3B4AB32263F7951 /* [CP] Check Pods Manifest.lock */,
+				138510D621C7431700CE6309 /* Sources */,
+				138510D721C7431700CE6309 /* Frameworks */,
+				138510D821C7431700CE6309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				138510DC21C7431700CE6309 /* PBXTargetDependency */,
+			);
+			name = LFBSocialSDKDemoUITests;
+			productName = LFBSocialSDKDemoUITests;
+			productReference = 138510DA21C7431700CE6309 /* LFBSocialSDKDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		138510AF21C7431600CE6309 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = liufubo;
+				TargetAttributes = {
+					138510B621C7431600CE6309 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					138510CE21C7431700CE6309 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 138510B621C7431600CE6309;
+					};
+					138510D921C7431700CE6309 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 138510B621C7431600CE6309;
+					};
+				};
+			};
+			buildConfigurationList = 138510B221C7431600CE6309 /* Build configuration list for PBXProject "LFBSocialSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 138510AE21C7431600CE6309;
+			productRefGroup = 138510B821C7431600CE6309 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				138510B621C7431600CE6309 /* LFBSocialSDKDemo */,
+				138510CE21C7431700CE6309 /* LFBSocialSDKDemoTests */,
+				138510D921C7431700CE6309 /* LFBSocialSDKDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		138510B521C7431600CE6309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138510C721C7431700CE6309 /* LaunchScreen.storyboard in Resources */,
+				138510C421C7431700CE6309 /* Assets.xcassets in Resources */,
+				13B9025421D4C98A004353D9 /* readme.md in Resources */,
+				130B2A38225DE5C6006B827E /* socialAsset.xcassets in Resources */,
+				138510C221C7431600CE6309 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138510CD21C7431700CE6309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138510D821C7431700CE6309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F0CADFFE3B4AB32263F7951 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LFBSocialSDKDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		626C4363784CCA1D89099C96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LFBSocialSDKDemo/Pods-LFBSocialSDKDemo-resources.sh",
+				"${PODS_ROOT}/TencentOpenAPI/TencentOpenApi_IOS_Bundle.bundle",
+				"${PODS_ROOT}/WeiboSDK/libWeiboSDK/WeiboSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TencentOpenApi_IOS_Bundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LFBSocialSDKDemo/Pods-LFBSocialSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835D9069273662D603B56719 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LFBSocialSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		861E133738BCDF0CB4D8883E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LFBSocialSDKDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		138510B321C7431600CE6309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B56F6521D35EE80020EAF0 /* LFBChannelWX.m in Sources */,
+				13B9024C21D4B165004353D9 /* UIColor+RGB.m in Sources */,
+				13B56F6421D35E2C0020EAF0 /* LFBChannelManager.m in Sources */,
+				13B9024921D48A01004353D9 /* LFBShareCollectionCell.m in Sources */,
+				13B56F6321D35E190020EAF0 /* LFBChannelPYQ.m in Sources */,
+				134A432A21C8930300F5B763 /* LFBChannelQQ.m in Sources */,
+				138510FA21C755FC00CE6309 /* LFBDataInfo.m in Sources */,
+				1311AC9E21D22A9E008CA596 /* LFBShareMoudle.m in Sources */,
+				138510F621C74B7D00CE6309 /* LFBShareInfo.m in Sources */,
+				13B56F6221D35D0A0020EAF0 /* AppDelegate+Scheme.m in Sources */,
+				135EE8E521CB9E00004A93AC /* LFBShareChannelConfig.m in Sources */,
+				138510BF21C7431600CE6309 /* ViewController.m in Sources */,
+				1311ACA121D22AD2008CA596 /* LFBShareMoudleView.m in Sources */,
+				138510CA21C7431700CE6309 /* main.m in Sources */,
+				13B9025221D4BEA3004353D9 /* LFBSharePlateforms.m in Sources */,
+				138510BC21C7431600CE6309 /* AppDelegate.m in Sources */,
+				138510EF21C743FD00CE6309 /* LFBChannelBase.m in Sources */,
+				13D0CDE221D46FE600D187A9 /* LFBShareCollectionView.m in Sources */,
+				134A433021C8941800F5B763 /* LFBChannelSinaWB.m in Sources */,
+				134A432D21C8932800F5B763 /* LFBChannelQQZone.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138510CB21C7431700CE6309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138510D421C7431700CE6309 /* LFBSocialSDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138510D621C7431700CE6309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138510DF21C7431700CE6309 /* LFBSocialSDKDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		138510D121C7431700CE6309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138510B621C7431600CE6309 /* LFBSocialSDKDemo */;
+			targetProxy = 138510D021C7431700CE6309 /* PBXContainerItemProxy */;
+		};
+		138510DC21C7431700CE6309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138510B621C7431600CE6309 /* LFBSocialSDKDemo */;
+			targetProxy = 138510DB21C7431700CE6309 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		138510C021C7431600CE6309 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				138510C121C7431600CE6309 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		138510C521C7431700CE6309 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				138510C621C7431700CE6309 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		138510E121C7431700CE6309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+					"-fobjc-arc",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		138510E221C7431700CE6309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+					"-fobjc-arc",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		138510E421C7431700CE6309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F51A40CDB0902E785CF0273 /* Pods-LFBSocialSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VUB45YDCB;
+				INFOPLIST_FILE = LFBSocialSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yxyt.YXYT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		138510E521C7431700CE6309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B38CBBC455036B06AE556E3 /* Pods-LFBSocialSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VUB45YDCB;
+				INFOPLIST_FILE = LFBSocialSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yxyt.YXYT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		138510E721C7431700CE6309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F80E5C73BB42CA78A60CADE7 /* Pods-LFBSocialSDKDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFBSocialSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liufubo.com.liufubo.LFBSocialSDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LFBSocialSDKDemo.app/LFBSocialSDKDemo";
+			};
+			name = Debug;
+		};
+		138510E821C7431700CE6309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F0413B5DF75F508A5A48A2 /* Pods-LFBSocialSDKDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFBSocialSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liufubo.com.liufubo.LFBSocialSDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LFBSocialSDKDemo.app/LFBSocialSDKDemo";
+			};
+			name = Release;
+		};
+		138510EA21C7431700CE6309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED967E6648B58C4A24C7B60 /* Pods-LFBSocialSDKDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFBSocialSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liufubo.com.liufubo.LFBSocialSDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LFBSocialSDKDemo;
+			};
+			name = Debug;
+		};
+		138510EB21C7431700CE6309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C162E186924D244D6F6511 /* Pods-LFBSocialSDKDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFBSocialSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liufubo.com.liufubo.LFBSocialSDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LFBSocialSDKDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		138510B221C7431600CE6309 /* Build configuration list for PBXProject "LFBSocialSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138510E121C7431700CE6309 /* Debug */,
+				138510E221C7431700CE6309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		138510E321C7431700CE6309 /* Build configuration list for PBXNativeTarget "LFBSocialSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138510E421C7431700CE6309 /* Debug */,
+				138510E521C7431700CE6309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		138510E621C7431700CE6309 /* Build configuration list for PBXNativeTarget "LFBSocialSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138510E721C7431700CE6309 /* Debug */,
+				138510E821C7431700CE6309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		138510E921C7431700CE6309 /* Build configuration list for PBXNativeTarget "LFBSocialSDKDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138510EA21C7431700CE6309 /* Debug */,
+				138510EB21C7431700CE6309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 138510AF21C7431600CE6309 /* Project object */;
+}
