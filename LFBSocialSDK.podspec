@@ -1,137 +1,77 @@
-#
-#  Be sure to run `pod spec lint LFBSocialSDK.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
+
 
 Pod::Spec.new do |s|
 
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
-
+  # 库名字
   s.name         = "LFBSocialSDK"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of LFBSocialSDK."
-
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  # 库的版本
+  s.version      = "1.0.0"
+  # 库摘要
+  s.summary      = "一款提供分享和第三方登陆服务的框架"
+  # 库描述
   s.description  = <<-DESC
-                   DESC
+                   简单易容的分享框架，目前提供微信、
+                   朋友圈、QQ、QQ空间、新浪微博分享服务，
+                   同时也提供了第三方登录功能
+                   持续更新中...
+                  DESC
 
-  s.homepage     = "http://EXAMPLE/LFBSocialSDK"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See http://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # 远程仓库地址,即GitHub地址，或者你使用的其他Gitlab地址
+  s.homepage     = "https://github.com/LiuFuBo1991/LFBSocialSDK"
+  
+  # MIT许可证 (The MIT License),软件授权条款
+  s.license      = "MIT"
 
 
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
+  # 作者信息
+  s.author             = { "liufubo" => "18380438251@163.com" }
+  # 作者信息
+  s.social_media_url   = "http://www.jianshu.com/u/7d935e492eec"
+   
 
-  s.author             = { "LiuFuBo1991" => "646185403@qq.com" }
-  # Or just: s.author    = "LiuFuBo1991"
-  # s.authors            = { "LiuFuBo1991" => "646185403@qq.com" }
-  # s.social_media_url   = "http://twitter.com/LiuFuBo1991"
+  # 支持的系统及支持的最低系统版本
+  s.platform     = :ios
+  s.platform     = :ios, "8.0"
 
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
+  #  支持多平台使用时配置
   # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
 
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
-
-  s.source       = { :git => "http://EXAMPLE/LFBSocialSDK.git", :tag => "#{s.version}" }
+  # 下载地址，远程仓库的 GitHub下载地址(clone 地址), 使用.git结尾
+  s.source       = { :git => "https://github.com/LiuFuBo1991/LFBSocialSDK.git", :tag => "#{s.version}" }
 
 
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
+  # 库文件在仓库中的相对路径
+  # 等号后面的第一个参数表示的是要添加 Cocoapods 依赖的库在项目中的相对路径
+  # 我的库在库根目录，所以直接就是LFBSocialSDK
+  # 如果库放在其他地方，比如LFBSocial/LFBSocialSDK,则填写实际相对路径
+  # 等号后的第二个参数，表示LFBSocialSDK文件夹下的哪些文件需要 Cocoapods依赖
+  # "**"这个通配符代表LFBSocialSDK文件下所有文件,"*.{h,m}代表所有的.h,.m文件"
+  s.source_files  = "LFBSocialSDK", "LFBSocialSDK/**/*.{h,m}"
+  # 指明 LFBSocialSDK文件夹下不需要添加到 Cocoapods的文件
+  # 这里 Exclude 文件夹内的内容
+  #s.exclude_files = "LFBSocialSDK/Exclude"
+  # 公开头文件 
+  s.public_header_files = "LFBSocialSDK/**/*.h"
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  # 项目中是否用到ARC
+  s.requires_arc = true
 
-  # s.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
-
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
+  
+  # 库中用到的框架或系统库 (没有用到可以没有)
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
-
-  # s.requires_arc = true
-
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+    
+  # 如果库中依赖其他的三方库，可以添加这些依赖库
+  s.dependency "WechatOpenSDK", "~> 1.8.4"
+  s.dependency "TencentOpenAPI", "~> 1.0.0"
+  s.dependency "WeiboSDK", "~> 3.1.3"
 
 end
