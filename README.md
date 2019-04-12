@@ -102,7 +102,6 @@ Photos.framework&nbsp;
 如果你的应用使用了如SSO授权登录或跳转到第三方分享功能，在iOS9/10下就需要增加一个可跳转的白名单，即LSApplicationQueriesSchemes，否则将在SDK判断是否跳转时用到的canOpenURL时返回NO，进而只进行webview授权或授权/分享失败。在项目中的info.plist中加入应用白名单，右键info.plist选择source code打开(plist具体设置在Build Setting -> Packaging -> Info.plist File可获取plist路径)请根据选择的平台对以下配置进行裁剪：
 
 (```)
-
 <key>LSApplicationQueriesSchemes</key>
 <array>
     <!-- 微信 URL Scheme 白名单-->
@@ -225,7 +224,6 @@ Photos.framework&nbsp;
     <string>twitter</string>
     <string>twitterauth</string>
 </array>
-
 (```)
 
 
