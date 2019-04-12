@@ -108,13 +108,13 @@ Photos.framework&nbsp;
     /**!-- 微信 URL Scheme 白名单*/
     <string>wechat</string>
     <string>weixin</string>
-    <!-- 新浪微博 URL Scheme 白名单-->
+    /** 新浪微博 URL Scheme 白名单*/
     <string>sinaweibohd</string>
     <string>sinaweibo</string>
     <string>sinaweibosso</string>
     <string>weibosdk</string>
     <string>weibosdk2.5</string>
-    <!-- QQ、Qzone URL Scheme 白名单-->
+    /** QQ、Qzone URL Scheme 白名单*/
     <string>mqqapi</string>
     <string>mqq</string>
     <string>mqqOpensdkSSoLogin</string>
@@ -154,60 +154,58 @@ Photos.framework&nbsp;
     <string>timopensdkdataline</string>
     <string>wtlogintimV1</string>
     <string>timapiV1</string>
-    <!-- 支付宝 URL Scheme 白名单-->
+    /** 支付宝 URL Scheme 白名单*/
     <string>alipay</string>
     <string>alipayshare</string>
-    <!-- 钉钉 URL Scheme 白名单-->
+    /** 钉钉 URL Scheme 白名单*/
       <string>dingtalk</string>
       <string>dingtalk-open</string>
-    <!--Linkedin URL Scheme 白名单-->
+    /** Linkedin URL Scheme 白名单*/
     <string>linkedin</string>
     <string>linkedin-sdk2</string>
     <string>linkedin-sdk</string>
-    <!-- 点点虫 URL Scheme 白名单-->
+    /** 点点虫 URL Scheme 白名单*/
     <string>laiwangsso</string>
-    <!-- 易信 URL Scheme 白名单-->
+    /** 易信 URL Scheme 白名单*/
     <string>yixin</string>
     <string>yixinopenapi</string>
-    <!-- instagram URL Scheme 白名单-->
+    /** instagram URL Scheme 白名单*/
     <string>instagram</string>
-    <!-- whatsapp URL Scheme 白名单-->
+    /** whatsapp URL Scheme 白名单*/
     <string>whatsapp</string>
-    <!-- line URL Scheme 白名单-->
+    /** line URL Scheme 白名单*/
     <string>line</string>
-    <!-- Facebook URL Scheme 白名单-->
+    /** Facebook URL Scheme 白名单*/
     <string>fbapi</string>
     <string>fb-messenger-api</string>
     <string>fb-messenger-share-api</string>
     <string>fbauth2</string>
     <string>fbshareextension</string>
-    <!-- Kakao URL Scheme 白名单-->  
-    <!-- 注：以下第一个参数需替换为自己的kakao appkey--> 
-    <!-- 格式为 kakao + "kakao appkey"-->    
+    /** Kakao URL Scheme 白名单,注：以下第一个参数需替换为自己的kakao appkey,格式为 kakao + "kakao appkey*/
     <string>kakaofa63a0b2356e923f3edd6512d531f546</string>
     <string>kakaokompassauth</string>
     <string>storykompassauth</string>
     <string>kakaolink</string>
     <string>kakaotalk-4.5.0</string>
     <string>kakaostory-2.9.0</string>
-   <!-- pinterest URL Scheme 白名单-->  
+   /** pinterest URL Scheme 白名单*/ 
     <string>pinterestsdk.v1</string>
-   <!-- Tumblr URL Scheme 白名单-->  
+   /** Tumblr URL Scheme 白名单*/  
     <string>tumblr</string>
-   <!-- 印象笔记 -->
+   /** 印象笔记 */
     <string>evernote</string>
     <string>en</string>
     <string>enx</string>
     <string>evernotecid</string>
     <string>evernotemsg</string>
-   <!-- 有道云笔记-->
+   /** 有道云笔记*/
     <string>youdaonote</string>
     <string>ynotedictfav</string>
     <string>com.youdao.note.todayViewNote</string>
     <string>ynotesharesdk</string>
-   <!-- Google+-->
+   /** Google+*/
     <string>gplus</string>
-   <!-- Pocket-->
+   /** Pocket*/
     <string>pocket</string>
     <string>readitlater</string>
     <string>pocket-oauth-v1</string>
@@ -217,28 +215,83 @@ Photos.framework&nbsp;
     <string>com.ideashower.ReadItLaterPro</string>
     <string>com.ideashower.ReadItLaterProAlpha</string>
     <string>com.ideashower.ReadItLaterProEnterprise</string>
-   <!-- VKontakte-->
+   /** VKontakte*/
     <string>vk</string>
     <string>vk-share</string>
     <string>vkauthorize</string>
-   <!-- Twitter-->
+   /** Twitter*/
     <string>twitter</string>
     <string>twitterauth</string>
 </array>
 </code></pre>
 
 
+### 配置URL Scheme
+
+* URL Scheme是通过系统找到并跳转对应app的一类设置，通过向项目中的info.plist文件中加入URL types可使用第三方平台所注册的appkey信息向系统注册你的app，当跳转到第三方应用授权或分享后，可直接跳转回你的app。
+
+* 添加URL Types可工程设置面板设置
+
+![image](https://github.com/LiuFuBo1991/LFBSocialSDK/blob/master/imageFolder/icon_share_scheme.jpeg)
 
 
+### 权限配置
+
+微博
+
+从微博SDk 3.2.1，即U-Share 6.9.1版开始，支持微博分享多张图片。需在 info.plist 文件中配置相册权限
+
+<pre><code>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>App需要您的同意,才能访问相册</string>
+</code></pre>
 
 
+### 初始化配置
 
+应用启动后，需要在AppDelegate.m里面配置对应平台的AppKey和AppSecret
 
+<pre><code>
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self configChannel];
+    return YES;
+}
 
+- (void)configChannel{
+    LFBShareChannelConfig *config = [[LFBShareChannelConfig alloc]init];
+    [[LFBChannelManager sharedManager] setDelegate:config];
+    [config setChannelType:LFBChannelTypeWX appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168"];
+    [config setChannelType:LFBChannelTypePYQ appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168"];
+    [config setChannelType:LFBChannelTypeQQ appKey:@"1101053067" appSecret:nil];
+    [config setChannelType:LFBChannelTypeQQZone appKey:@"1101053067" appSecret:nil];
+    [config setChannelType:LFBChannelTypeSinaWB appKey:@"1843267010" appSecret:@"b2f5b2b661babaa3c01b57312decffd7"];
+}
 
+</code></pre>
 
+### 设置系统回调
 
+<pre><code>
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    if (@available(iOS 9.0, *)) {
+        return  [self handlerOuterURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]];
+    }
+    return YES;
+}
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [self handlerOuterURL:url sourceApplication:nil];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [self handlerOuterURL:url sourceApplication:sourceApplication];
+}
+
+- (BOOL)handlerOuterURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication{
+    return [[LFBChannelManager sharedManager] handleOpenURL:url];
+}
+
+</code></pre>
 
 
 
