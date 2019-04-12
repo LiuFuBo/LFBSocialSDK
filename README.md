@@ -35,3 +35,20 @@ pod 'LFBSocialSDK'
 ### 添加项目配置
 
 在Other Linker Flags加入-Objc, 注意不要手动写为-Objc
+![image](https://github.com/LiuFuBo1991/LFBSocialSDK/blob/master/imageFolder/icon_share_other_linke.jpeg)
+
+-Objc属于链接必备参数，如果不加此项，会导致库文件无法被正确链接，SDK无法正常运行
+
+
+### 加入依赖系统库
+
+在General下的Linked Frameworks and Libraries添加系统库
+
+![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_libraries.png)
+
+加入以下系统库
+
+''' 
+libsqlite3.tbd&nbsp;
+CoreGraphics.framework
+'''
