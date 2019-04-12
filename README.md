@@ -22,10 +22,12 @@ LFBSocialSDK是一款第三方分享框架，提供了优雅便捷的调用方�
 ### CocoaPods
 
 1、可以在Podfile中加入下面一行代码来使用LFBSocialSDK
+
 pod 'LFBSocialSDK'
 
 ### 手动导入
 
 1、下载LFBSocialSDK文件下所有内容并拖入你的工程中
+
 2、导入 'LFBSocialSDK.h'
 
