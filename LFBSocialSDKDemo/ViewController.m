@@ -6,12 +6,8 @@
 //  Copyright © 2018 liufubo. All rights reserved.
 //
 
-#import "LFBDataInfo.h"
 #import "ViewController.h"
-#import "LFBChannelBase.h"
-#import "LFBChannelManager.h"
-#import "LFBSharePlateforms.h"
-#import "LFBShareMoudle.h"
+#import "LFBSocialSDK.h"
 
 
 

@@ -141,6 +141,7 @@
 		13B9025321D4C98A004353D9 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		13D0CDE021D46FE600D187A9 /* LFBShareCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareCollectionView.h; sourceTree = "<group>"; };
 		13D0CDE121D46FE600D187A9 /* LFBShareCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareCollectionView.m; sourceTree = "<group>"; };
+		13E43B4722603A33008F2FC7 /* LFBSocialSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBSocialSDK.h; sourceTree = "<group>"; };
 		18B636AC177FE8AFBB8A0DDC /* libPods-LFBSocialSDKDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFBSocialSDKDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F0413B5DF75F508A5A48A2 /* Pods-LFBSocialSDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFBSocialSDKDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFBSocialSDKDemoTests/Pods-LFBSocialSDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		27C162E186924D244D6F6511 /* Pods-LFBSocialSDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFBSocialSDKDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFBSocialSDKDemoUITests/Pods-LFBSocialSDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -273,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				1311AC9B21D22A9E008CA596 /* LFBShareMoudle */,
+				13E43B4722603A33008F2FC7 /* LFBSocialSDK.h */,
 				138510ED21C743FD00CE6309 /* LFBChannelBase.h */,
 				138510EE21C743FD00CE6309 /* LFBChannelBase.m */,
 				134A431F21C8904500F5B763 /* LFBChannelManager.h */,
