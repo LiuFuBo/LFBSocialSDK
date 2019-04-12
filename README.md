@@ -48,7 +48,10 @@ pod 'LFBSocialSDK'
 
 加入以下系统库
 
-''' 
-libsqlite3.tbd&nbsp;
-CoreGraphics.framework
-'''
+
+'libsqlite3.tbd &nbsp;
+
+CoreGraphics.framework'
+
+
+
