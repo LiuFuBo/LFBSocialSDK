@@ -36,9 +36,16 @@
 
 - (void)startShare:(UIButton *)sender{
     LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
-    model.shareType = LFBChannelTypeWX;
-    model.shareInfoType = LFBShareInfoTypeText;
+//    model.shareType = LFBChannelType;
+    model.shareInfoType = LFBShareInfoTypeApplet;
+    model.title = @"小程序";
     model.text = @"大家来找茬!!!";
+    model.webPageUrl =@"https://tapi.eyxyt.com/activefront/qrcode/shared_car_get_coupon?coupon_template_id=113";
+    model.userName = @"gh_a4ff22eef403";
+    model.path = @"pages/getcoupon?coupon_template_id=113";
+    model.hdImageData = nil;
+    model.withShareTicket = YES;
+    model.miniProgramType = LFBShareMiniInfoTypeRelease;
     [LFBShareMoudle showShareViewWithObject:model];
 }
 

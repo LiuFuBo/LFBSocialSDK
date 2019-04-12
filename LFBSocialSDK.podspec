@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
   # 如果库放在其他地方，比如LFBSocial/LFBSocialSDK,则填写实际相对路径
   # 等号后的第二个参数，表示LFBSocialSDK文件夹下的哪些文件需要 Cocoapods依赖
   # "**"这个通配符代表LFBSocialSDK文件下所有文件,"*.{h,m}代表所有的.h,.m文件"
-  s.source_files  = "LFBSocialSDK", "LFBSocialSDK/*"
+  s.source_files  = "LFBSocialSDK", "LFBSocialSDK/**/*.{h,m}"
   # 指明 LFBSocialSDK文件夹下不需要添加到 Cocoapods的文件
   # 这里 Exclude 文件夹内的内容
   #s.exclude_files = "LFBSocialSDK/Exclude"
