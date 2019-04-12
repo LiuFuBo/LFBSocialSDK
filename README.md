@@ -31,3 +31,7 @@ pod 'LFBSocialSDK'
 
 2、导入 'LFBSocialSDK.h'
 
+
+### 添加项目配置
+
+在Other Linker Flags加入-Objc, 注意不要手动写为-Objc
