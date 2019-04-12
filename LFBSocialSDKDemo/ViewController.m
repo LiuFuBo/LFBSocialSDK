@@ -36,7 +36,7 @@
 
 - (void)startShare:(UIButton *)sender{
     LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
-//    model.shareType = LFBChannelType;
+    model.shareType = LFBChannelTypeWX;
     model.shareInfoType = LFBShareInfoTypeApplet;
     model.title = @"小程序";
     model.text = @"大家来找茬!!!";

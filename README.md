@@ -260,11 +260,11 @@ Photos.framework&nbsp;
 - (void)configChannel{
     LFBShareChannelConfig *config = [[LFBShareChannelConfig alloc]init];
     [[LFBChannelManager sharedManager] setDelegate:config];
-    [config setChannelType:LFBChannelTypeWX appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168"];
-    [config setChannelType:LFBChannelTypePYQ appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168"];
-    [config setChannelType:LFBChannelTypeQQ appKey:@"1101053067" appSecret:nil];
-    [config setChannelType:LFBChannelTypeQQZone appKey:@"1101053067" appSecret:nil];
-    [config setChannelType:LFBChannelTypeSinaWB appKey:@"1843267010" appSecret:@"b2f5b2b661babaa3c01b57312decffd7"];
+    [config setChannelType:LFBChannelTypeWX appKey:@"wx515bbc9e05bf9dx80" appSecret:@"1d44d80947bb3821506e440116f73168"];
+    [config setChannelType:LFBChannelTypePYQ appKey:@"wx515bbc9e05bf9dx80" appSecret:@"1d44d80947bb3821506e440116f73168"];
+    [config setChannelType:LFBChannelTypeQQ appKey:@"1101053347" appSecret:nil];
+    [config setChannelType:LFBChannelTypeQQZone appKey:@"1101053237" appSecret:nil];
+    [config setChannelType:LFBChannelTypeSinaWB appKey:@"1843261032" appSecret:@"b2f5b2b661babaa3c01b57312decffd7"];
 }
 
 </code></pre>
@@ -294,6 +294,86 @@ Photos.framework&nbsp;
 </code></pre>
 
 
+### 基本使用
+
+当用户自定义分享渠道时，有两种调用方式分别如下:
+
+* 带Block回调
+
+<pre><code>
+    
+  LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
+    model.shareType = LFBChannelTypeWX;
+    model.shareInfoType = LFBShareInfoTypeApplet;
+    model.title = @"小程序";
+    model.text = @"大家来找茬!!!";
+    model.webPageUrl =@"https://tapi.liufuboExample.com/activefront/qrcode/shared_car_get_coupon?coupon_template_id=115";
+    model.userName = @"gh_a4ff22eef403";
+    model.path = @"pages/getcoupon?coupon_template_id=115";
+    model.hdImageData = nil;
+    model.withShareTicket = YES;
+    model.miniProgramType = LFBShareMiniInfoTypeRelease;
+    [LFBShareMoudle shareObject:model completion:^(id sender, LFBChannelType channelType, LFBShareState shareState) {
+        
+    }];
+
+</code></pre>
+
+
+* 不带block的调用方式
+
+<pre><code>
+    
+  LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
+    model.shareType = LFBChannelTypeWX;
+    model.shareInfoType = LFBShareInfoTypeApplet;
+    model.title = @"小程序";
+    model.text = @"大家来找茬!!!";
+    model.webPageUrl =@"https://tapi.liufuboExample.com/activefront/qrcode/shared_car_get_coupon?coupon_template_id=115";
+    model.userName = @"gh_a4ff22eef403";
+    model.path = @"pages/getcoupon?coupon_template_id=115";
+    model.hdImageData = nil;
+    model.withShareTicket = YES;
+    model.miniProgramType = LFBShareMiniInfoTypeRelease;
+    [LFBShareMoudle shareObject:model];
+
+</code></pre>
+
+
+使用框架自带UI分享时,调用方式如下:
+
+<pre><code>
+    
+  LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
+    model.shareType = LFBChannelTypeWX;
+    model.shareInfoType = LFBShareInfoTypeApplet;
+    model.title = @"小程序";
+    model.text = @"大家来找茬!!!";
+    model.webPageUrl =@"https://tapi.liufuboExample.com/activefront/qrcode/shared_car_get_coupon?coupon_template_id=115";
+    model.userName = @"gh_a4ff22eef403";
+    model.path = @"pages/getcoupon?coupon_template_id=115";
+    model.hdImageData = nil;
+    model.withShareTicket = YES;
+    model.miniProgramType = LFBShareMiniInfoTypeRelease;
+    [LFBShareMoudle showShareViewWithObject:model];
+
+</code></pre>
+
+
+关于登陆功能的使用方法:
+
+<pre><code>
+    
+   [LFBShareMoudle loginWithChannelType:LFBChannelTypeWX success:^(LFBChannelBase *channel, id data) {
+        LFBUserInfo *userInfo = data;
+        NSLog(@"%@",userInfo.nickname);
+    } fail:^(LFBChannelBase *channel, NSError *error) {
+        NSLog(@"%@",error);
+    } cancel:^(LFBChannelBase *channel) {
+        NSLog(@"取消操作");
+    }];
+
+</code></pre>
 
 
 
