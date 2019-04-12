@@ -65,7 +65,7 @@ CoreGraphics.framework
 精简版无需添加以下依赖库
 
 <pre><code>
- SystemConfiguration.framework&nbsp;
+SystemConfiguration.framework&nbsp;
 CoreTelephony.framework&nbsp;
 libsqlite3.tbd&nbsp;
 libc++.tbd&nbsp;
@@ -387,4 +387,4 @@ Photos.framework&nbsp;
 </code></pre>
 
 
-
+####  总结： 该框架还处于刚开始迭代的过程中，肯定有很多不足的地方，如在使用过程中遇到问题或者有更好的建议，欢迎issue我，你的issue才是我前进的动力~! thanks
