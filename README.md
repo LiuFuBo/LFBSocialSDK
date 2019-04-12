@@ -48,10 +48,10 @@ pod 'LFBSocialSDK'
 
 加入以下系统库
 
-
+<pre><code>
 libsqlite3.tbd &nbsp;
-
 CoreGraphics.framework
+</code></pre>
 
 
 ### 第三方平台库添加
@@ -64,11 +64,14 @@ CoreGraphics.framework
 
 精简版无需添加以下依赖库
 
-SystemConfiguration.framework&nbsp;
+<pre><code>
+ SystemConfiguration.framework&nbsp;
 CoreTelephony.framework&nbsp;
 libsqlite3.tbd&nbsp;
 libc++.tbd&nbsp;
-libz.tbd&nbsp;
+libz.tbd&nbsp;   
+</code></pre>
+
 
 
 QQ(完整版)
@@ -76,24 +79,32 @@ QQ(完整版)
 
 精简版无需添加以下依赖库
 
+<pre><code>
 SystemConfiguration.framework&nbsp;
-libc++.tbd&nbsp;
+libc++.tbd&nbsp;    
+</code></pre>
+
 
 
 新浪微博(精简版)
 
+<pre><code> 
 Photos.framework&nbsp;
+</code></pre>
+
 
 
 新浪微博(完整版)
 
-
+<pre><code>  
 SystemConfiguration.framework&nbsp;
 CoreTelephony.framework&nbsp;
 ImageIO.framework&nbsp;
 libsqlite3.tbd&nbsp;
 libz.tbd &nbsp;
 Photos.framework&nbsp;
+</code></pre>
+
 
 
 ### 配置SSO白名单
@@ -242,8 +253,8 @@ Photos.framework&nbsp;
 从微博SDk 3.2.1，即U-Share 6.9.1版开始，支持微博分享多张图片。需在 info.plist 文件中配置相册权限
 
 <pre><code>
-<key>NSPhotoLibraryUsageDescription</key>
-<string>App需要您的同意,才能访问相册</string>
+/** <key>NSPhotoLibraryUsageDescription</key> */
+/** <string>App需要您的同意,才能访问相册</string> */
 </code></pre>
 
 
@@ -302,7 +313,7 @@ Photos.framework&nbsp;
 
 <pre><code>
     
-  LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
+    LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
     model.shareType = LFBChannelTypeWX;
     model.shareInfoType = LFBShareInfoTypeApplet;
     model.title = @"小程序";
@@ -324,7 +335,7 @@ Photos.framework&nbsp;
 
 <pre><code>
     
-  LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
+    LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
     model.shareType = LFBChannelTypeWX;
     model.shareInfoType = LFBShareInfoTypeApplet;
     model.title = @"小程序";
@@ -344,7 +355,7 @@ Photos.framework&nbsp;
 
 <pre><code>
     
-  LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
+    LFBSharePlateforms *model = [[LFBSharePlateforms alloc]init];
     model.shareType = LFBChannelTypeWX;
     model.shareInfoType = LFBShareInfoTypeApplet;
     model.title = @"小程序";
