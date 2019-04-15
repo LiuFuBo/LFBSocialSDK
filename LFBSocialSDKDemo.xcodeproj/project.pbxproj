@@ -820,6 +820,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VUB45YDCB;
 				INFOPLIST_FILE = LFBSocialSDKDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -839,6 +840,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VUB45YDCB;
 				INFOPLIST_FILE = LFBSocialSDKDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -857,6 +859,7 @@
 			baseConfigurationReference = 9ED967E6648B58C4A24C7B60 /* Pods-LFBSocialSDKDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VUB45YDCB;
 				INFOPLIST_FILE = LFBSocialSDKDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -875,6 +878,7 @@
 			baseConfigurationReference = 27C162E186924D244D6F6511 /* Pods-LFBSocialSDKDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VUB45YDCB;
 				INFOPLIST_FILE = LFBSocialSDKDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
