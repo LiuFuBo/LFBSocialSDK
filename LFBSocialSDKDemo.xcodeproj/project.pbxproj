@@ -304,8 +304,8 @@
 			isa = PBXGroup;
 			children = (
 				13E43B4722603A33008F2FC7 /* LFBSocialSDK.h */,
-				13592C47226419E8005D13C8 /* LFBSocialChannel */,
 				1311AC9B21D22A9E008CA596 /* LFBShareMoudle */,
+				13592C47226419E8005D13C8 /* LFBSocialChannel */,
 				130B2A37225DE5C6006B827E /* socialAsset.xcassets */,
 			);
 			path = LFBSocialSDK;
