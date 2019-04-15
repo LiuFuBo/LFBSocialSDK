@@ -89,6 +89,13 @@
     }
 }
 
+- (UIImage *)imageWithName:(NSString *)imageName{
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"Image" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:path];
+    NSString *imagePath = [bundle pathForResource:@"socialBundle" ofType:@"png"];
+    return [UIImage imageWithContentsOfFile:imagePath];
+}
+
 #pragma mark - getter & setter
 - (UIImageView *)channelIcon{
     return _channelIcon?:({

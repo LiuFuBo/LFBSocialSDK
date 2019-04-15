@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # 项目中的图片资源
-  s.ios.resource_bundle = { 'LFBSocialSDK' => 'LFBSocialSDK/Resources/*.png' }
+  spec.resource = 'LFBSocialSDK/socialBundle.bundle'
 
   
   # 库中用到的框架或系统库 (没有用到可以没有)
