@@ -25,11 +25,7 @@
 		134A435021C8F9A500F5B763 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A434F21C8F9A500F5B763 /* CoreText.framework */; };
 		134A435221C8F9B200F5B763 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A435121C8F9B200F5B763 /* UIKit.framework */; };
 		134A435421C8F9C000F5B763 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A435321C8F9C000F5B763 /* Foundation.framework */; };
-		13592C9E22645668005D13C8 /* icon_share_weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 13592C9922645668005D13C8 /* icon_share_weibo.png */; };
-		13592C9F22645668005D13C8 /* icon_share_pengyouquan.png in Resources */ = {isa = PBXBuildFile; fileRef = 13592C9A22645668005D13C8 /* icon_share_pengyouquan.png */; };
-		13592CA022645668005D13C8 /* icon_share_weixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 13592C9B22645668005D13C8 /* icon_share_weixin.png */; };
-		13592CA122645668005D13C8 /* icon_share_qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 13592C9C22645668005D13C8 /* icon_share_qq.png */; };
-		13592CA222645668005D13C8 /* icon_share_zone.png in Resources */ = {isa = PBXBuildFile; fileRef = 13592C9D22645668005D13C8 /* icon_share_zone.png */; };
+		13592CA422645E84005D13C8 /* socialAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13592CA322645E84005D13C8 /* socialAsset.xcassets */; };
 		135EE8E521CB9E00004A93AC /* LFBShareChannelConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 135EE8E421CB9E00004A93AC /* LFBShareChannelConfig.m */; };
 		138510BC21C7431600CE6309 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510BB21C7431600CE6309 /* AppDelegate.m */; };
 		138510BF21C7431600CE6309 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510BE21C7431600CE6309 /* ViewController.m */; };
@@ -108,11 +104,7 @@
 		134A434F21C8F9A500F5B763 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		134A435121C8F9B200F5B763 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		134A435321C8F9C000F5B763 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		13592C9922645668005D13C8 /* icon_share_weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_share_weibo.png; sourceTree = "<group>"; };
-		13592C9A22645668005D13C8 /* icon_share_pengyouquan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_share_pengyouquan.png; sourceTree = "<group>"; };
-		13592C9B22645668005D13C8 /* icon_share_weixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_share_weixin.png; sourceTree = "<group>"; };
-		13592C9C22645668005D13C8 /* icon_share_qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_share_qq.png; sourceTree = "<group>"; };
-		13592C9D22645668005D13C8 /* icon_share_zone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_share_zone.png; sourceTree = "<group>"; };
+		13592CA322645E84005D13C8 /* socialAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = socialAsset.xcassets; sourceTree = "<group>"; };
 		135EE8E321CB9E00004A93AC /* LFBShareChannelConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareChannelConfig.h; sourceTree = "<group>"; };
 		135EE8E421CB9E00004A93AC /* LFBShareChannelConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareChannelConfig.m; sourceTree = "<group>"; };
 		138510B721C7431600CE6309 /* LFBSocialSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LFBSocialSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,18 +211,6 @@
 			path = LFBShareMoudle;
 			sourceTree = "<group>";
 		};
-		13592C9822645668005D13C8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				13592C9922645668005D13C8 /* icon_share_weibo.png */,
-				13592C9A22645668005D13C8 /* icon_share_pengyouquan.png */,
-				13592C9B22645668005D13C8 /* icon_share_weixin.png */,
-				13592C9C22645668005D13C8 /* icon_share_qq.png */,
-				13592C9D22645668005D13C8 /* icon_share_zone.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		138510AE21C7431600CE6309 = {
 			isa = PBXGroup;
 			children = (
@@ -317,8 +297,8 @@
 				138510F821C755D700CE6309 /* LFBDataInfo.m */,
 				138510F321C74B2800CE6309 /* LFBShareInfo.h */,
 				138510F421C74B2800CE6309 /* LFBShareInfo.m */,
-				13592C9822645668005D13C8 /* Resources */,
 				13B9025321D4C98A004353D9 /* readme.md */,
+				13592CA322645E84005D13C8 /* socialAsset.xcassets */,
 			);
 			path = LFBSocialSDK;
 			sourceTree = SOURCE_ROOT;
@@ -466,15 +446,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13592CA122645668005D13C8 /* icon_share_qq.png in Resources */,
-				13592CA022645668005D13C8 /* icon_share_weixin.png in Resources */,
-				13592CA222645668005D13C8 /* icon_share_zone.png in Resources */,
 				138510C721C7431700CE6309 /* LaunchScreen.storyboard in Resources */,
 				138510C421C7431700CE6309 /* Assets.xcassets in Resources */,
 				13B9025421D4C98A004353D9 /* readme.md in Resources */,
-				13592C9F22645668005D13C8 /* icon_share_pengyouquan.png in Resources */,
+				13592CA422645E84005D13C8 /* socialAsset.xcassets in Resources */,
 				138510C221C7431600CE6309 /* Main.storyboard in Resources */,
-				13592C9E22645668005D13C8 /* icon_share_weibo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
