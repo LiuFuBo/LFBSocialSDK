@@ -50,37 +50,16 @@ Pod::Spec.new do |s|
   # 如果库放在其他地方，比如LFBSocial/LFBSocialSDK,则填写实际相对路径
   # 等号后的第二个参数，表示LFBSocialSDK文件夹下的哪些文件需要 Cocoapods依赖
   # "**"这个通配符代表LFBSocialSDK文件下所有文件,"*.{h,m}代表所有的.h,.m文件"
-  s.source_files  = "LFBSocialSDK", "LFBSocialSDK/LFBSocialSDK.h"
+  s.source_files  = "LFBSocialSDK", "LFBSocialSDK/**/*.{h,m}"
   # 指明 LFBSocialSDK文件夹下不需要添加到 Cocoapods的文件
   # 这里 Exclude 文件夹内的内容
   #s.exclude_files = "LFBSocialSDK/Exclude"
   # 公开头文件 
-  s.public_header_files = "LFBSocialSDK/Classes/*.h"
-
-  # 项目分层
-
-  # LFBSocialChannel模块
-  s.subspec 'LFBSocialChannel' do |ss|
-   ss.source_files = 'LFBSocialSDK/LFBSocialChannel/*.{h,m}'
-
-  end
-  
-  # LFBShareMoudle模块
-  s.subspec 'LFBShareMoudle' do |ss|
-     ss.source_files = 'LFBSocialSDK/LFBShareMoudle/*.{h,m}'
-     ss.dependency = 'LFBSocialSDK/LFBSocialChannel'
-  end
+  s.public_header_files = "LFBSocialSDK/Classes/**/*.h"
 
   # 项目中是否用到ARC
   s.requires_arc = true
-   
-  
-  # 项目图片资源文件
-  s.resource_bundles = {
 
-     'LFBSocialSDK' => ['LFBSocialSDK/socialAsset/*.xcassets']
-
-  }
   
   # 库中用到的框架或系统库 (没有用到可以没有)
   #s.static_framework = true
