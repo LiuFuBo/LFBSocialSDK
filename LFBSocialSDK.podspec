@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # 项目中的图片资源
-  s.resource = ['LFBSocialSDK/*.xcassets']
+  #s.resource = ['LFBSocialSDK/*.xcassets']
 
   
   # 库中用到的框架或系统库 (没有用到可以没有)
