@@ -60,6 +60,10 @@ Pod::Spec.new do |s|
   # 项目中是否用到ARC
   s.requires_arc = true
 
+  # 添加项目图片资源
+  s.resource_bundles = {
+    'LFBSocialSDK' = ['LFBSocialSDK/socialAsset/*']
+  }
   
   # 库中用到的框架或系统库 (没有用到可以没有)
   #s.static_framework = true
