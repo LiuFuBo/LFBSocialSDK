@@ -10,9 +10,6 @@
 		130B2A38225DE5C6006B827E /* socialAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130B2A37225DE5C6006B827E /* socialAsset.xcassets */; };
 		1311AC9E21D22A9E008CA596 /* LFBShareMoudle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1311AC9D21D22A9E008CA596 /* LFBShareMoudle.m */; };
 		1311ACA121D22AD2008CA596 /* LFBShareMoudleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1311ACA021D22AD2008CA596 /* LFBShareMoudleView.m */; };
-		134A432A21C8930300F5B763 /* LFBChannelQQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432921C8930300F5B763 /* LFBChannelQQ.m */; };
-		134A432D21C8932800F5B763 /* LFBChannelQQZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432C21C8932800F5B763 /* LFBChannelQQZone.m */; };
-		134A433021C8941800F5B763 /* LFBChannelSinaWB.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432F21C8941800F5B763 /* LFBChannelSinaWB.m */; };
 		134A433A21C8A17500F5B763 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A433921C8A17500F5B763 /* libsqlite3.0.tbd */; };
 		134A433C21C8A18800F5B763 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A433B21C8A18800F5B763 /* libc++.tbd */; };
 		134A433E21C8A19000F5B763 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A433D21C8A19000F5B763 /* libz.tbd */; };
@@ -26,7 +23,17 @@
 		134A435021C8F9A500F5B763 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A434F21C8F9A500F5B763 /* CoreText.framework */; };
 		134A435221C8F9B200F5B763 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A435121C8F9B200F5B763 /* UIKit.framework */; };
 		134A435421C8F9C000F5B763 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134A435321C8F9C000F5B763 /* Foundation.framework */; };
-		135EE8E521CB9E00004A93AC /* LFBShareChannelConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 135EE8E421CB9E00004A93AC /* LFBShareChannelConfig.m */; };
+		13592C5F226419E8005D13C8 /* LFBShareInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 13592C4A226419E8005D13C8 /* LFBShareInfo.m */; };
+		13592C60226419E8005D13C8 /* LFBChannelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 13592C4C226419E8005D13C8 /* LFBChannelBase.m */; };
+		13592C61226419E8005D13C8 /* LFBChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13592C4F226419E8005D13C8 /* LFBChannelManager.m */; };
+		13592C62226419E8005D13C8 /* LFBChannelSinaWB.m in Sources */ = {isa = PBXBuildFile; fileRef = 13592C50226419E8005D13C8 /* LFBChannelSinaWB.m */; };
+		13592C63226419E8005D13C8 /* LFBChannelWX.m in Sources */ = {isa = PBXBuildFile; fileRef = 13592C52226419E8005D13C8 /* LFBChannelWX.m */; };
+		13592C64226419E8005D13C8 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 13592C54226419E8005D13C8 /* readme.md */; };
+		13592C65226419E8005D13C8 /* LFBChannelQQZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 13592C55226419E8005D13C8 /* LFBChannelQQZone.m */; };
+		13592C66226419E8005D13C8 /* LFBShareChannelConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 13592C57226419E8005D13C8 /* LFBShareChannelConfig.m */; };
+		13592C67226419E8005D13C8 /* LFBChannelPYQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 13592C5B226419E8005D13C8 /* LFBChannelPYQ.m */; };
+		13592C68226419E8005D13C8 /* LFBDataInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 13592C5C226419E8005D13C8 /* LFBDataInfo.m */; };
+		13592C69226419E8005D13C8 /* LFBChannelQQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 13592C5E226419E8005D13C8 /* LFBChannelQQ.m */; };
 		138510BC21C7431600CE6309 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510BB21C7431600CE6309 /* AppDelegate.m */; };
 		138510BF21C7431600CE6309 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510BE21C7431600CE6309 /* ViewController.m */; };
 		138510C221C7431600CE6309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138510C021C7431600CE6309 /* Main.storyboard */; };
@@ -35,17 +42,10 @@
 		138510CA21C7431700CE6309 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510C921C7431700CE6309 /* main.m */; };
 		138510D421C7431700CE6309 /* LFBSocialSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510D321C7431700CE6309 /* LFBSocialSDKDemoTests.m */; };
 		138510DF21C7431700CE6309 /* LFBSocialSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510DE21C7431700CE6309 /* LFBSocialSDKDemoUITests.m */; };
-		138510EF21C743FD00CE6309 /* LFBChannelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510EE21C743FD00CE6309 /* LFBChannelBase.m */; };
-		138510F621C74B7D00CE6309 /* LFBShareInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510F421C74B2800CE6309 /* LFBShareInfo.m */; };
-		138510FA21C755FC00CE6309 /* LFBDataInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 138510F821C755D700CE6309 /* LFBDataInfo.m */; };
 		13B56F6221D35D0A0020EAF0 /* AppDelegate+Scheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B56F6121D35D0A0020EAF0 /* AppDelegate+Scheme.m */; };
-		13B56F6321D35E190020EAF0 /* LFBChannelPYQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432621C892E800F5B763 /* LFBChannelPYQ.m */; };
-		13B56F6421D35E2C0020EAF0 /* LFBChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432021C8904500F5B763 /* LFBChannelManager.m */; };
-		13B56F6521D35EE80020EAF0 /* LFBChannelWX.m in Sources */ = {isa = PBXBuildFile; fileRef = 134A432321C892CB00F5B763 /* LFBChannelWX.m */; };
 		13B9024921D48A01004353D9 /* LFBShareCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9024821D48A01004353D9 /* LFBShareCollectionCell.m */; };
 		13B9024C21D4B165004353D9 /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9024B21D4B165004353D9 /* UIColor+RGB.m */; };
 		13B9025221D4BEA3004353D9 /* LFBSharePlateforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9025121D4BEA3004353D9 /* LFBSharePlateforms.m */; };
-		13B9025421D4C98A004353D9 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 13B9025321D4C98A004353D9 /* readme.md */; };
 		13D0CDE221D46FE600D187A9 /* LFBShareCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D0CDE121D46FE600D187A9 /* LFBShareCollectionView.m */; };
 		288D6F20053DEE4CC3CEEE0F /* libPods-LFBSocialSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8DC5ADC4ED8121DF5EF123 /* libPods-LFBSocialSDKDemo.a */; };
 		5BB411A23A62B51B8DCEF467 /* libPods-LFBSocialSDKDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D8607BEA043E6456C6A607 /* libPods-LFBSocialSDKDemoTests.a */; };
@@ -79,19 +79,6 @@
 		1311AC9F21D22AD2008CA596 /* LFBShareMoudleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareMoudleView.h; sourceTree = "<group>"; };
 		1311ACA021D22AD2008CA596 /* LFBShareMoudleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareMoudleView.m; sourceTree = "<group>"; };
 		1311ACA221D22C08008CA596 /* LFBShareDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareDefine.h; sourceTree = "<group>"; };
-		134A431E21C88C3800F5B763 /* LFBOpProcessProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBOpProcessProtocol.h; sourceTree = "<group>"; };
-		134A431F21C8904500F5B763 /* LFBChannelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelManager.h; sourceTree = "<group>"; };
-		134A432021C8904500F5B763 /* LFBChannelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelManager.m; sourceTree = "<group>"; };
-		134A432221C892CB00F5B763 /* LFBChannelWX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelWX.h; sourceTree = "<group>"; };
-		134A432321C892CB00F5B763 /* LFBChannelWX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelWX.m; sourceTree = "<group>"; };
-		134A432521C892E800F5B763 /* LFBChannelPYQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelPYQ.h; sourceTree = "<group>"; };
-		134A432621C892E800F5B763 /* LFBChannelPYQ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelPYQ.m; sourceTree = "<group>"; };
-		134A432821C8930300F5B763 /* LFBChannelQQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelQQ.h; sourceTree = "<group>"; };
-		134A432921C8930300F5B763 /* LFBChannelQQ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelQQ.m; sourceTree = "<group>"; };
-		134A432B21C8932800F5B763 /* LFBChannelQQZone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelQQZone.h; sourceTree = "<group>"; };
-		134A432C21C8932800F5B763 /* LFBChannelQQZone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelQQZone.m; sourceTree = "<group>"; };
-		134A432E21C8941800F5B763 /* LFBChannelSinaWB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelSinaWB.h; sourceTree = "<group>"; };
-		134A432F21C8941800F5B763 /* LFBChannelSinaWB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelSinaWB.m; sourceTree = "<group>"; };
 		134A433921C8A17500F5B763 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		134A433B21C8A18800F5B763 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		134A433D21C8A19000F5B763 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -105,8 +92,29 @@
 		134A434F21C8F9A500F5B763 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		134A435121C8F9B200F5B763 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		134A435321C8F9C000F5B763 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		135EE8E321CB9E00004A93AC /* LFBShareChannelConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareChannelConfig.h; sourceTree = "<group>"; };
-		135EE8E421CB9E00004A93AC /* LFBShareChannelConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareChannelConfig.m; sourceTree = "<group>"; };
+		13592C48226419E8005D13C8 /* LFBChannelQQZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBChannelQQZone.h; sourceTree = "<group>"; };
+		13592C49226419E8005D13C8 /* LFBOpProcessProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBOpProcessProtocol.h; sourceTree = "<group>"; };
+		13592C4A226419E8005D13C8 /* LFBShareInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBShareInfo.m; sourceTree = "<group>"; };
+		13592C4B226419E8005D13C8 /* LFBShareChannelConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBShareChannelConfig.h; sourceTree = "<group>"; };
+		13592C4C226419E8005D13C8 /* LFBChannelBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBChannelBase.m; sourceTree = "<group>"; };
+		13592C4D226419E8005D13C8 /* LFBChannelPYQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBChannelPYQ.h; sourceTree = "<group>"; };
+		13592C4E226419E8005D13C8 /* LFBChannelHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBChannelHeaderFile.h; sourceTree = "<group>"; };
+		13592C4F226419E8005D13C8 /* LFBChannelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBChannelManager.m; sourceTree = "<group>"; };
+		13592C50226419E8005D13C8 /* LFBChannelSinaWB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBChannelSinaWB.m; sourceTree = "<group>"; };
+		13592C51226419E8005D13C8 /* LFBChannelQQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBChannelQQ.h; sourceTree = "<group>"; };
+		13592C52226419E8005D13C8 /* LFBChannelWX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBChannelWX.m; sourceTree = "<group>"; };
+		13592C53226419E8005D13C8 /* LFBDataInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBDataInfo.h; sourceTree = "<group>"; };
+		13592C54226419E8005D13C8 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		13592C55226419E8005D13C8 /* LFBChannelQQZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBChannelQQZone.m; sourceTree = "<group>"; };
+		13592C56226419E8005D13C8 /* LFBChannelBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBChannelBase.h; sourceTree = "<group>"; };
+		13592C57226419E8005D13C8 /* LFBShareChannelConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBShareChannelConfig.m; sourceTree = "<group>"; };
+		13592C58226419E8005D13C8 /* LFBShareInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBShareInfo.h; sourceTree = "<group>"; };
+		13592C59226419E8005D13C8 /* LFBChannelSinaWB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBChannelSinaWB.h; sourceTree = "<group>"; };
+		13592C5A226419E8005D13C8 /* LFBChannelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBChannelManager.h; sourceTree = "<group>"; };
+		13592C5B226419E8005D13C8 /* LFBChannelPYQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBChannelPYQ.m; sourceTree = "<group>"; };
+		13592C5C226419E8005D13C8 /* LFBDataInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBDataInfo.m; sourceTree = "<group>"; };
+		13592C5D226419E8005D13C8 /* LFBChannelWX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBChannelWX.h; sourceTree = "<group>"; };
+		13592C5E226419E8005D13C8 /* LFBChannelQQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBChannelQQ.m; sourceTree = "<group>"; };
 		138510B721C7431600CE6309 /* LFBSocialSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LFBSocialSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138510BA21C7431600CE6309 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		138510BB21C7431600CE6309 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,13 +131,6 @@
 		138510DA21C7431700CE6309 /* LFBSocialSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFBSocialSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		138510DE21C7431700CE6309 /* LFBSocialSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBSocialSDKDemoUITests.m; sourceTree = "<group>"; };
 		138510E021C7431700CE6309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		138510ED21C743FD00CE6309 /* LFBChannelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelBase.h; sourceTree = "<group>"; };
-		138510EE21C743FD00CE6309 /* LFBChannelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelBase.m; sourceTree = "<group>"; };
-		138510F021C7446C00CE6309 /* LFBChannelHeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelHeaderFile.h; sourceTree = "<group>"; };
-		138510F321C74B2800CE6309 /* LFBShareInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareInfo.h; sourceTree = "<group>"; };
-		138510F421C74B2800CE6309 /* LFBShareInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareInfo.m; sourceTree = "<group>"; };
-		138510F721C755D700CE6309 /* LFBDataInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBDataInfo.h; sourceTree = "<group>"; };
-		138510F821C755D700CE6309 /* LFBDataInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBDataInfo.m; sourceTree = "<group>"; };
 		13B56F6021D35D0A0020EAF0 /* AppDelegate+Scheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Scheme.h"; sourceTree = "<group>"; };
 		13B56F6121D35D0A0020EAF0 /* AppDelegate+Scheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Scheme.m"; sourceTree = "<group>"; };
 		13B9024721D48A01004353D9 /* LFBShareCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareCollectionCell.h; sourceTree = "<group>"; };
@@ -138,7 +139,6 @@
 		13B9024B21D4B165004353D9 /* UIColor+RGB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
 		13B9025021D4BEA3004353D9 /* LFBSharePlateforms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBSharePlateforms.h; sourceTree = "<group>"; };
 		13B9025121D4BEA3004353D9 /* LFBSharePlateforms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBSharePlateforms.m; sourceTree = "<group>"; };
-		13B9025321D4C98A004353D9 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		13D0CDE021D46FE600D187A9 /* LFBShareCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareCollectionView.h; sourceTree = "<group>"; };
 		13D0CDE121D46FE600D187A9 /* LFBShareCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareCollectionView.m; sourceTree = "<group>"; };
 		13E43B4722603A33008F2FC7 /* LFBSocialSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBSocialSDK.h; sourceTree = "<group>"; };
@@ -211,6 +211,36 @@
 			path = LFBShareMoudle;
 			sourceTree = "<group>";
 		};
+		13592C47226419E8005D13C8 /* LFBSocialChannel */ = {
+			isa = PBXGroup;
+			children = (
+				13592C56226419E8005D13C8 /* LFBChannelBase.h */,
+				13592C4C226419E8005D13C8 /* LFBChannelBase.m */,
+				13592C5A226419E8005D13C8 /* LFBChannelManager.h */,
+				13592C4F226419E8005D13C8 /* LFBChannelManager.m */,
+				13592C4B226419E8005D13C8 /* LFBShareChannelConfig.h */,
+				13592C57226419E8005D13C8 /* LFBShareChannelConfig.m */,
+				13592C4E226419E8005D13C8 /* LFBChannelHeaderFile.h */,
+				13592C49226419E8005D13C8 /* LFBOpProcessProtocol.h */,
+				13592C48226419E8005D13C8 /* LFBChannelQQZone.h */,
+				13592C4A226419E8005D13C8 /* LFBShareInfo.m */,
+				13592C4D226419E8005D13C8 /* LFBChannelPYQ.h */,
+				13592C50226419E8005D13C8 /* LFBChannelSinaWB.m */,
+				13592C51226419E8005D13C8 /* LFBChannelQQ.h */,
+				13592C52226419E8005D13C8 /* LFBChannelWX.m */,
+				13592C53226419E8005D13C8 /* LFBDataInfo.h */,
+				13592C55226419E8005D13C8 /* LFBChannelQQZone.m */,
+				13592C58226419E8005D13C8 /* LFBShareInfo.h */,
+				13592C59226419E8005D13C8 /* LFBChannelSinaWB.h */,
+				13592C5B226419E8005D13C8 /* LFBChannelPYQ.m */,
+				13592C5C226419E8005D13C8 /* LFBDataInfo.m */,
+				13592C5D226419E8005D13C8 /* LFBChannelWX.h */,
+				13592C5E226419E8005D13C8 /* LFBChannelQQ.m */,
+				13592C54226419E8005D13C8 /* readme.md */,
+			);
+			path = LFBSocialChannel;
+			sourceTree = "<group>";
+		};
 		138510AE21C7431600CE6309 = {
 			isa = PBXGroup;
 			children = (
@@ -273,32 +303,10 @@
 		138510EC21C7438500CE6309 /* LFBSocialSDK */ = {
 			isa = PBXGroup;
 			children = (
-				1311AC9B21D22A9E008CA596 /* LFBShareMoudle */,
 				13E43B4722603A33008F2FC7 /* LFBSocialSDK.h */,
-				138510ED21C743FD00CE6309 /* LFBChannelBase.h */,
-				138510EE21C743FD00CE6309 /* LFBChannelBase.m */,
-				134A431F21C8904500F5B763 /* LFBChannelManager.h */,
-				134A432021C8904500F5B763 /* LFBChannelManager.m */,
-				135EE8E321CB9E00004A93AC /* LFBShareChannelConfig.h */,
-				135EE8E421CB9E00004A93AC /* LFBShareChannelConfig.m */,
-				138510F021C7446C00CE6309 /* LFBChannelHeaderFile.h */,
-				134A431E21C88C3800F5B763 /* LFBOpProcessProtocol.h */,
-				134A432221C892CB00F5B763 /* LFBChannelWX.h */,
-				134A432321C892CB00F5B763 /* LFBChannelWX.m */,
-				134A432521C892E800F5B763 /* LFBChannelPYQ.h */,
-				134A432621C892E800F5B763 /* LFBChannelPYQ.m */,
-				134A432821C8930300F5B763 /* LFBChannelQQ.h */,
-				134A432921C8930300F5B763 /* LFBChannelQQ.m */,
-				134A432B21C8932800F5B763 /* LFBChannelQQZone.h */,
-				134A432C21C8932800F5B763 /* LFBChannelQQZone.m */,
-				134A432E21C8941800F5B763 /* LFBChannelSinaWB.h */,
-				134A432F21C8941800F5B763 /* LFBChannelSinaWB.m */,
-				138510F721C755D700CE6309 /* LFBDataInfo.h */,
-				138510F821C755D700CE6309 /* LFBDataInfo.m */,
-				138510F321C74B2800CE6309 /* LFBShareInfo.h */,
-				138510F421C74B2800CE6309 /* LFBShareInfo.m */,
+				13592C47226419E8005D13C8 /* LFBSocialChannel */,
+				1311AC9B21D22A9E008CA596 /* LFBShareMoudle */,
 				130B2A37225DE5C6006B827E /* socialAsset.xcassets */,
-				13B9025321D4C98A004353D9 /* readme.md */,
 			);
 			path = LFBSocialSDK;
 			sourceTree = SOURCE_ROOT;
@@ -448,8 +456,8 @@
 			files = (
 				138510C721C7431700CE6309 /* LaunchScreen.storyboard in Resources */,
 				138510C421C7431700CE6309 /* Assets.xcassets in Resources */,
-				13B9025421D4C98A004353D9 /* readme.md in Resources */,
 				130B2A38225DE5C6006B827E /* socialAsset.xcassets in Resources */,
+				13592C64226419E8005D13C8 /* readme.md in Resources */,
 				138510C221C7431600CE6309 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,26 +576,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B56F6521D35EE80020EAF0 /* LFBChannelWX.m in Sources */,
+				13592C69226419E8005D13C8 /* LFBChannelQQ.m in Sources */,
+				13592C63226419E8005D13C8 /* LFBChannelWX.m in Sources */,
 				13B9024C21D4B165004353D9 /* UIColor+RGB.m in Sources */,
-				13B56F6421D35E2C0020EAF0 /* LFBChannelManager.m in Sources */,
 				13B9024921D48A01004353D9 /* LFBShareCollectionCell.m in Sources */,
-				13B56F6321D35E190020EAF0 /* LFBChannelPYQ.m in Sources */,
-				134A432A21C8930300F5B763 /* LFBChannelQQ.m in Sources */,
-				138510FA21C755FC00CE6309 /* LFBDataInfo.m in Sources */,
+				13592C62226419E8005D13C8 /* LFBChannelSinaWB.m in Sources */,
+				13592C68226419E8005D13C8 /* LFBDataInfo.m in Sources */,
 				1311AC9E21D22A9E008CA596 /* LFBShareMoudle.m in Sources */,
-				138510F621C74B7D00CE6309 /* LFBShareInfo.m in Sources */,
 				13B56F6221D35D0A0020EAF0 /* AppDelegate+Scheme.m in Sources */,
-				135EE8E521CB9E00004A93AC /* LFBShareChannelConfig.m in Sources */,
 				138510BF21C7431600CE6309 /* ViewController.m in Sources */,
 				1311ACA121D22AD2008CA596 /* LFBShareMoudleView.m in Sources */,
+				13592C65226419E8005D13C8 /* LFBChannelQQZone.m in Sources */,
 				138510CA21C7431700CE6309 /* main.m in Sources */,
+				13592C66226419E8005D13C8 /* LFBShareChannelConfig.m in Sources */,
+				13592C67226419E8005D13C8 /* LFBChannelPYQ.m in Sources */,
+				13592C61226419E8005D13C8 /* LFBChannelManager.m in Sources */,
+				13592C60226419E8005D13C8 /* LFBChannelBase.m in Sources */,
+				13592C5F226419E8005D13C8 /* LFBShareInfo.m in Sources */,
 				13B9025221D4BEA3004353D9 /* LFBSharePlateforms.m in Sources */,
 				138510BC21C7431600CE6309 /* AppDelegate.m in Sources */,
-				138510EF21C743FD00CE6309 /* LFBChannelBase.m in Sources */,
 				13D0CDE221D46FE600D187A9 /* LFBShareCollectionView.m in Sources */,
-				134A433021C8941800F5B763 /* LFBChannelSinaWB.m in Sources */,
-				134A432D21C8932800F5B763 /* LFBChannelQQZone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
