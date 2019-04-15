@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   # 项目中的图片资源
 
   s.resource_bundles = {
-    'LFBSocialSDK' = ['LFBSocialSDK/socialAsset/*.png']
+    'LFBSocialSDK' => ['LFBSocialSDK/socialAsset/*.png']
   }
 
   
