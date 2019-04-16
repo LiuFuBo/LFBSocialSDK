@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
    # 'LFBSocialSDK' => ['LFBSocialSDK/Assets/**/**/*']
   #}
   
-  s.resource = [LFBSocialSDK/**/**/*.xcassets]
+  s.resource = ['LFBSocialSDK/**/**/*.xcassets']
   
 
   
