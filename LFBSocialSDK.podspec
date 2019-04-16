@@ -61,11 +61,11 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # 项目中的图片资源
-  s.resource_bundles = {
-    'LFBSocialSDK' => ['LFBSocialSDK/Assets/**/**/*']
-  }
+  #s.resource_bundles = {
+   # 'LFBSocialSDK' => ['LFBSocialSDK/Assets/**/**/*']
+  #}
   
-
+  s.resource = [LFBSocialSDK/**/**/*.xcassets]
   
 
   
