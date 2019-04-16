@@ -68,6 +68,7 @@
         applet.webPageUrl = self.webPageUrl;
         applet.userName = self.userName;
         applet.hdImageData = self.hdImageData;
+        applet.thumbData = self.thubnailData;
         applet.withShareTicket = self.withShareTicket;
         applet.miniProgramType = self.miniProgramType;
         return applet;

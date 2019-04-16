@@ -77,6 +77,8 @@
 @property (nonatomic, strong) NSString *path;
 /** 小程序新版本的预览图二进制数据 */
 @property (nonatomic, strong) NSData *hdImageData;
+/** 小程序缩略图,< 32KB,新版本优先 */
+@property (nonatomic, strong) NSData *thumbData;
 /** 是否使用带shareTicket的分享 */
 @property (nonatomic, assign) BOOL withShareTicket;
 /** 小程序的类型 */

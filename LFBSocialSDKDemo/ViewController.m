@@ -43,7 +43,8 @@
     model.webPageUrl =@"https://tapi.eyxyt.com/activefront/qrcode/shared_car_get_coupon?coupon_template_id=113";
     model.userName = @"gh_a4ff22eef403";
     model.path = @"pages/getcoupon?coupon_template_id=113";
-    model.hdImageData = nil;
+//    model.hdImageData = UIImagePNGRepresentation([UIImage imageNamed:@"miniApplet"]);
+//    model.thubnailData = UIImagePNGRepresentation([UIImage imageNamed:@"miniApplet"]);
     model.withShareTicket = YES;
     model.miniProgramType = LFBShareMiniInfoTypeRelease;
     [LFBShareMoudle showShareViewWithObject:model];

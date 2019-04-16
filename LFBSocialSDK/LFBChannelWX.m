@@ -203,10 +203,10 @@
         WXMediaMessage *message = [WXMediaMessage message];
         message.title = appletInfo.title;
         message.description = appletInfo.desc;
-        message.thumbData = nil;
+        message.thumbData = appletInfo.thumbData;
         message.mediaObject = object;
         
-        req.bText = YES;
+        req.bText = NO;
         req.message = message;
     }else{
         req = nil;
