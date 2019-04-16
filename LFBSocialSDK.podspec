@@ -55,13 +55,13 @@ Pod::Spec.new do |s|
   # 这里 Exclude 文件夹内的内容
   #s.exclude_files = "LFBSocialSDK/Exclude"
   # 公开头文件 
-  s.public_header_files = "LFBSocialSDK/Classes/**/*.h"
+  #s.public_header_files = "LFBSocialSDK/Classes/**/*.h"
 
   # 项目中是否用到ARC
   s.requires_arc = true
 
   # 项目中的图片资源
-  spec.resource = [ 'LFBSocialSDK/**/*.xcassets']
+  s.resource = [ 'LFBSocialSDK/Assets/**/*']
 
   
   # 库中用到的框架或系统库 (没有用到可以没有)
