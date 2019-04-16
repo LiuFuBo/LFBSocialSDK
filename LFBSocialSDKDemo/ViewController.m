@@ -43,8 +43,11 @@
     model.webPageUrl =@"https://tapi.eyxyt.com/activefront/qrcode/shared_car_get_coupon?coupon_template_id=113";
     model.userName = @"gh_a4ff22eef403";
     model.path = @"pages/getcoupon?coupon_template_id=113";
-//    model.hdImageData = UIImagePNGRepresentation([UIImage imageNamed:@"miniApplet"]);
-//    model.thubnailData = UIImagePNGRepresentation([UIImage imageNamed:@"miniApplet"]);
+    NSURL *url = [NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555407004298&di=a07b43eff871a98ea55c5936a00c5326&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F16%2F66%2F99%2F30V58PICdCr_1024.jpg"];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+//    model.hdImageData = UIImageJPEGRepresentation([UIImage imageNamed:@"bg_default_01"], 0.4);
+//    model.thubnailData = UIImagePNGRepresentation([UIImage imageNamed:@"bg_default_01"]);
+    model.hdImageData = data;
     model.withShareTicket = YES;
     model.miniProgramType = LFBShareMiniInfoTypeRelease;
     [LFBShareMoudle showShareViewWithObject:model];
