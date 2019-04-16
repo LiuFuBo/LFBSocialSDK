@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   # 库名字
   s.name         = "LFBSocialSDK"
   # 库的版本
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   # 库摘要
   s.summary      = "一款提供分享和第三方登陆服务的框架"
   # 库描述
