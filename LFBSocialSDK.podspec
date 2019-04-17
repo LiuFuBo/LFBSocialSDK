@@ -41,7 +41,8 @@ Pod::Spec.new do |s|
 
 
   # 下载地址，远程仓库的 GitHub下载地址(clone 地址), 使用.git结尾
-  s.source       = { :git => "https://github.com/LiuFuBo1991/LFBSocialSDK.git", :tag => "#{s.version}" }
+  #  如果使用版本号做为tag那么不能频繁的打tag，必须要保持版本号和tag一致，否在拉取到的将是版本号作为tag对应提交的内容
+  s.source       = { :git => "https://github.com/LiuFuBo1991/LFBSocialSDK.git", :tag => 1.1.4 }
 
 
   # 库文件在仓库中的相对路径
