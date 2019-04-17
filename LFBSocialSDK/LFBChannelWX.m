@@ -199,14 +199,14 @@
         }else{
             object.miniProgramType = WXMiniProgramTypePreview;
         }
-        
+        //添加message信息
         WXMediaMessage *message = [WXMediaMessage message];
         message.title = appletInfo.title;
         message.description = appletInfo.desc;
         message.thumbData = appletInfo.thumbData;
         message.mediaObject = object;
-        
-        req.bText = NO;
+        //将组装内容添加到req中
+        req.bText =  NO;
         req.message = message;
     }else{
         req = nil;
