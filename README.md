@@ -387,5 +387,7 @@ Photos.framework&nbsp;
 </code></pre>
 
 
-### 联系 在使用LFBSocialSDK过程中有任何问题或者有更好的建议，都可以[issues](https://github.com/issues)我，我会及时解决。如果您想贡献代码，欢迎 [Pull Requests](https://github.com/pulls)。其他任何问题可以在下面留言，或者加QQ群:113950502联系我。
+### 联系 
+
+在使用LFBSocialSDK过程中有任何问题或者有更好的建议，都可以[issues](https://github.com/issues)我，我会及时解决。如果您想贡献代码，欢迎 [Pull Requests](https://github.com/pulls)。其他任何问题可以在下面留言，或者加QQ群:113950502联系我。
 
