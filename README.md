@@ -4,10 +4,6 @@ LFBSocialSDK
 [![Cocoapods](https://img.shields.io/badge/pod-v1.0.0-LFBModelFile.svg)](https://cocoapods.org/pods/LFBSocialSDK)&nbsp;
 ![Cocoapods](https://img.shields.io/badge/platform-osx%20%7C%20ios-LFBModelFile.svg)&nbsp;
 
-** 最新版本v1.0.4 修复了小程序分享预览图和缩略图过大分享失败问题
-
-
-
 LFBSocialSDK是一款第三方分享框架，提供了优雅便捷的调用方式，让你有更多的精力专注其他业务，只需要很少的配置，就可完成分享。
 
 
@@ -389,6 +385,10 @@ Photos.framework&nbsp;
     }];
 
 </code></pre>
+
+### 版本更新
+
+- v1.0.4 修复了小程序分享预览图和缩略图过大分享失败问题
 
 
 ### 联系 
