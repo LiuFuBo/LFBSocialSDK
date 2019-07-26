@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
   # 库名字
   s.name         = "LFBSocialSDK"
   # 库的版本
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   # 库摘要
-  s.summary      = "一款提供分享和第三方登陆服务的框架"
+  s.summary      = "share framework for iOS (powerful，superior performance)"
   # 库描述
   s.description  = <<-DESC
                    简单易容的分享框架，目前提供微信、
