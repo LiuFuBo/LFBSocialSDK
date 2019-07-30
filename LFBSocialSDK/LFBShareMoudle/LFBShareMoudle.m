@@ -28,6 +28,11 @@
     return share;
 }
 
++ (BOOL)couldShareWithChannel:(LFBChannelType)channel{
+    LFBChannelBase *baseChannel = [[LFBChannelManager sharedManager] channelWithType:channel];
+    return [baseChannel couldShare];
+}
+
 + (void)shareObject:(id)object{
     LFBShareMoudle *moudle = [LFBShareMoudle share];
     [moudle shareObject:object];

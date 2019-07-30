@@ -13,6 +13,11 @@
 @interface LFBShareMoudle : NSObject
 
 /**
+ *  是否支持分享
+ *  @param channel LFBChannelType 分享渠道
+ */
++ (BOOL)couldShareWithChannel:(LFBChannelType)channel;
+/**
  *  第三方分享弹框,弹出支持分享渠道
  *  @param object LFBSharePlateforms类型model
  */
