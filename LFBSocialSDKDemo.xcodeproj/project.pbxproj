@@ -46,6 +46,7 @@
 		13B9024C21D4B165004353D9 /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9024B21D4B165004353D9 /* UIColor+RGB.m */; };
 		13B9025221D4BEA3004353D9 /* LFBSharePlateforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9025121D4BEA3004353D9 /* LFBSharePlateforms.m */; };
 		13B9025421D4C98A004353D9 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 13B9025321D4C98A004353D9 /* readme.md */; };
+		13BFB7FE22F035EB00F7A270 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 13BFB7FD22F035EA00F7A270 /* banner.png */; };
 		13D0CDE221D46FE600D187A9 /* LFBShareCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D0CDE121D46FE600D187A9 /* LFBShareCollectionView.m */; };
 		288D6F20053DEE4CC3CEEE0F /* libPods-LFBSocialSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8DC5ADC4ED8121DF5EF123 /* libPods-LFBSocialSDKDemo.a */; };
 		5BB411A23A62B51B8DCEF467 /* libPods-LFBSocialSDKDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D8607BEA043E6456C6A607 /* libPods-LFBSocialSDKDemoTests.a */; };
@@ -139,6 +140,7 @@
 		13B9025021D4BEA3004353D9 /* LFBSharePlateforms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBSharePlateforms.h; sourceTree = "<group>"; };
 		13B9025121D4BEA3004353D9 /* LFBSharePlateforms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBSharePlateforms.m; sourceTree = "<group>"; };
 		13B9025321D4C98A004353D9 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		13BFB7FD22F035EA00F7A270 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		13D0CDE021D46FE600D187A9 /* LFBShareCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareCollectionView.h; sourceTree = "<group>"; };
 		13D0CDE121D46FE600D187A9 /* LFBShareCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareCollectionView.m; sourceTree = "<group>"; };
 		13E43B4722603A33008F2FC7 /* LFBSocialSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBSocialSDK.h; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 		138510D221C7431700CE6309 /* LFBSocialSDKDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				13BFB7FD22F035EA00F7A270 /* banner.png */,
 				138510D321C7431700CE6309 /* LFBSocialSDKDemoTests.m */,
 				138510D521C7431700CE6309 /* Info.plist */,
 			);
@@ -449,6 +452,7 @@
 				138510C721C7431700CE6309 /* LaunchScreen.storyboard in Resources */,
 				138510C421C7431700CE6309 /* Assets.xcassets in Resources */,
 				13B9025421D4C98A004353D9 /* readme.md in Resources */,
+				13BFB7FE22F035EB00F7A270 /* banner.png in Resources */,
 				13592CCF22648B9C005D13C8 /* Assets.xcassets in Resources */,
 				138510C221C7431600CE6309 /* Main.storyboard in Resources */,
 			);
