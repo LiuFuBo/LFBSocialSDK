@@ -13,7 +13,9 @@
 @interface LFBShareMoudle : NSObject
 
 /**
- *  是否支持分享
+ *  该渠道是否支持分享
+ *  未安装该渠道应用，或者安装的该渠道
+ *  应用版本过低时可导致无法分享
  *  @param channel LFBChannelType 分享渠道
  */
 + (BOOL)couldShareWithChannel:(LFBChannelType)channel;
