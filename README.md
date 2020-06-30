@@ -422,7 +422,7 @@ SDK接入指引
 注意：这里的appID格式为: TeamID（apple developer开发者账号登陆后可获取）+ . + BundleID(App项目可以查看)
      path这里可以直接填 " * " 也可以填写路劲并带*
 
- 这里需要将该json文件上传至服务器根目录下，这里假设根域名为www.social.com,则通过通过https://www.social.com/apple-app-site-association访问可以查看到文件内容或者下载本地配置则成功。咱们还可以通过苹果提供的 [验证网址](https://search.developer.apple.com/appsearch-validation-tool) 来直接验证apple-app-site-association设置是否生效。
+ 这里需要将该json文件上传至服务器根目录下，这里假设根域名为www.social.com,则通过通过[https://www.social.com/apple-app-site-association](https://www.social.com/apple-app-site-association)访问可以查看到文件内容或者下载本地配置则成功。咱们还可以通过苹果提供的 [验证网址](https://search.developer.apple.com/appsearch-validation-tool) 来直接验证apple-app-site-association设置是否生效。
 
  2.微信开放平台配置Universal Links
 
