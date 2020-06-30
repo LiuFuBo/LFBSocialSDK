@@ -453,17 +453,14 @@ SDK成功验证指引
 
 ![image](http://brandonliu.pub/icon_share_universal_wechat.png)
 
-2.确保App的Universal Links配置成功
-
-
- 3.连续发起分享，确认不会发生多次二次跳转行为
+ 2.连续发起分享，确认不会发生多次二次跳转行为
 
 当用户首次使用新版本SDK发起分享时，将会出现如下交互流程：从App拉起微信-出现“正在连接”页面-返回App-重新打开微信。以上是新的安全验证流程，每个用户在首次使用时会出现上述跳转。（如同一用户多次使用分享都出现跳转，请按照以下接入指引，检查Universal Links配置）
 
 ![image](http://brandonliu.pub/icon_share_ercilianjie_wechat.png)
 
 
-4.如App有使用微信授权登录功能，确认授权不出现二次确认弹窗
+3.如App有使用微信授权登录功能，确认授权不出现二次确认弹窗
 
 授权登录如出现以下二次确认弹窗，原因是微信无法通过App提供的Universal Links返回导致，很可能是App的Universal Links不生效，请按照接入指引检查Universal Links配置
 
