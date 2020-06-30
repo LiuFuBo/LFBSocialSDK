@@ -35,7 +35,8 @@ pod 'LFBSocialSDK'
 ### 添加项目配置
 
 在Other Linker Flags加入-Objc, 注意不要手动写为-Objc
-![image](http://brandonliu.pub/icon_share_other_linke.jpeg)
+
+![image](http://brandonliu.pub/icon_share_other_linkes.png)
 
 -Objc属于链接必备参数，如果不加此项，会导致库文件无法被正确链接，SDK无法正常运行
 
