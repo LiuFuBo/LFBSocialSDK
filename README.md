@@ -386,6 +386,114 @@ Photos.framework&nbsp;
 
 </code></pre>
 
+### 关于升级微信分享SDK(WechatOpenSDK)到1.8.6以后，分享功能无法使用问题。
+
+ 苹果iOS 13系统版本安全升级，为此WechatOpenSDK在1.8.6版本进行了适配。 1.8.6版本支持Universal Links方式跳转，对openSDK分享进行合法性校验。因为微信SDK的变化，在升级openSDK以后，如果您的LFBSocialSDK不是最新版本，则会导致微信分享调用失败。这里强烈建议您升级LFBSocialSDK到最新版本。
+
+ 环境要求:
+ > 1.SDK版本必须在1.8.6或以上
+ > 2.微信版本7.0.7或以上
+ > 3.系统版本iOS12或以上
+
+SDK接入指引
+
+1.根据[苹果文档](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content)配置应用的Universal Links
+
+
+微信使用第三方App的Universal Links唤起第三方App时，会在Universal Links末尾拼接路径和参数，因此开发者Universal Links配置必须加上通配符，并测试Universal Links拼接字符串能否唤起app
+
+建议Universal Links配置path，例如"/app/* ", 避免全域命中Universal Links跳转
+
+咱们以路劲applesite为例:
+```
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "6VUB45YDCB.com.yxyt.YXYT",
+            "paths": ["/applesite/*"]
+        }]
+    }
+}
+
+```
+
+注意：这里的appID格式为: TeamID（apple developer开发者账号登陆后可获取）+ . + BundleID(App项目可以查看)
+     path这里可以直接填 " * " 也可以填写路劲并带*
+
+ 这里需要将该json文件上传至服务器根目录下，这里假设根域名为www.social.com,则通过通过https://www.social.com/apple-app-site-association访问可以查看到文件内容或者下载本地配置则成功。咱们还可以通过苹果提供的 [验证网址](https://search.developer.apple.com/appsearch-validation-tool) 来直接验证apple-app-site-association设置是否生效。
+
+ 2.微信开放平台配置Universal Links
+
+ ![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_universal_set.png)
+
+ 3.登录苹果开发者后台，在设置证书的页面找到 Identifiers -> App ID（设置包名）里，在对应的BundleId下勾选 Associated Domains如下图，然后保存设置，然后重新生成配置文件。
+  ![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_appstore_doam.png)
+
+ 4.在 Xcode 中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏下的“URL type“添加“URL scheme”为你所注册的应用程序 id：在“LSApplicationQueriesSchemes“添加weixin 和weixinULAPI（如下图所示）
+ 
+ [image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_schem_set.png)
+ 
+ 5.打开Associated Domains开关，将Universal Links域名加到配置上
+
+ ![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_associatedDomain.png)
+
+ 注意点:在 Associated Domains里面配置的Universal Links必须要以applinks:开头，后面写上域名。
+ 例如：applinks:www.test.cn
+
+
+ 配置成功以后，咱们就可以来验证一下Universal Links是否生效
+
+SDK成功验证指引
+
+ 1.确认微信的Universal Links能正常访问
+
+ 首先，确认微信(7.0.7或以上版本)的Universal Links在设备上正常，以确保openSDK与微信双向使用Universal Links通信，Safari输入您配置好的通用连接，下拉查看是否有打开微信入口(如下图)。若无入口，可能是App的Universal Links配置有问题，或者网络状态异常。
+
+![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_universal_wechat.png)
+
+2.确保App的Universal Links配置成功
+
+
+ 3.连续发起分享，确认不会发生多次二次跳转行为
+
+当用户首次使用新版本SDK发起分享时，将会出现如下交互流程：从App拉起微信-出现“正在连接”页面-返回App-重新打开微信。以上是新的安全验证流程，每个用户在首次使用时会出现上述跳转。（如同一用户多次使用分享都出现跳转，请按照以下接入指引，检查Universal Links配置）
+
+![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_ercilianjie_wechat.png)
+
+
+4.如App有使用微信授权登录功能，确认授权不出现二次确认弹窗
+
+授权登录如出现以下二次确认弹窗，原因是微信无法通过App提供的Universal Links返回导致，很可能是App的Universal Links不生效，请按照接入指引检查Universal Links配置
+
+![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_login_frae.png)
+
+使用手则：
+
+1.配置appkey和secret这里需要多配置一项UniversalLink字段，对于QQ、新浪微博等平台没用到该功能的UniversalLink字段直接传nil即可。
+
+2.重写AppDelegate或SceneDelegate的continueUserActivity方法： 注意：适配了SceneDelegate的App，系统将会回调SceneDelegate的continueUserActivity方法，所以需要重写SceneDelegate的该方法。
+
+AppDelegate:
+
+```
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRest
+oring>> * __nullable restorableObjects))restorationHandler {
+    return [WXApi handleOpenUniversalLink:userActivity delegate:self];
+}
+
+```
+
+SceneDelegate:
+
+```
+- (void)scene:(UIScene *)scene continueUserActivity:(NSUserActivity *)userActivity {
+    [WXApi handleOpenUniversalLink:userActivity delegate:self];
+}
+
+```
+
 ### 版本更新
 
 - v1.0.4 修复了小程序分享预览图和缩略图过大,导致分享失败的问题
