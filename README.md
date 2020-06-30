@@ -1,4 +1,4 @@
-![image](https://github.com/LiuFuBo/LFBSocialSDK/blob/master/LFBSocialSDKDemoTests/banner.png)
+![image](http://brandonliu.pub/icon_share_banner.png)
 
 [![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/LiuFuBo1991/LFBSocialSDK)&nbsp;
 [![Cocoapods](https://img.shields.io/badge/pod-v1.0.0-LFBModelFile.svg)](https://cocoapods.org/pods/LFBSocialSDK)&nbsp;
