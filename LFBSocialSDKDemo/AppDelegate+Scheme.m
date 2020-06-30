@@ -26,6 +26,10 @@
     return [self handlerOuterURL:url sourceApplication:sourceApplication];
 }
 
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+    return [[LFBChannelManager sharedManager] handleOpenUniversalLink:userActivity];
+}
+
 - (BOOL)handlerOuterURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication{
     return [[LFBChannelManager sharedManager] handleOpenURL:url];
 }

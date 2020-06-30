@@ -55,6 +55,9 @@
 //OpenURL回调
 - (BOOL)handleOpenURL:(NSURL *)url;
 
+//通过通用链接启动应用时传递的参数（注:目前仅微信支持）
+- (BOOL)handleOpenUniversalLink:(NSUserActivity *)universalLink;
+
 @end
 
 

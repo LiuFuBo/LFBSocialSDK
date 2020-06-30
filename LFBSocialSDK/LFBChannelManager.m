@@ -28,6 +28,10 @@
     return [self.currentChannel handleOpenURL:url];
 }
 
+- (BOOL)handleOpenUniversalLink:(NSUserActivity *)universalLink {
+    return [self.currentChannel handleOpenUniversalLink:universalLink];
+}
+
 - (LFBChannelBase *)channelWithType:(LFBChannelType)channelType notInstallBlock:(LFBNotSupportBlock)block{
     LFBChannelBase *channel = [self channelWithType:channelType];
     channel.notSupportBlock = block;

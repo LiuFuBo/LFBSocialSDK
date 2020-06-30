@@ -3,7 +3,7 @@
 
 target 'LFBSocialSDKDemo' do
 
- pod 'WechatOpenSDK', '~> 1.8.3'
+ pod 'WechatOpenSDK', '~> 1.8.7.1'
  pod 'TencentOpenAPI', '~> 1.0.0'
  pod 'WeiboSDK', '~> 3.1.3'
  pod 'Masonry', '~> 1.1.0'

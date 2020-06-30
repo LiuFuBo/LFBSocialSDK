@@ -23,6 +23,9 @@
 //OpenURL回调
 - (BOOL)handleOpenURL:(NSURL *)url;
 
+//通过通用链接启动应用时传递的参数（注:目前仅微信支持）
+- (BOOL)handleOpenUniversalLink:(NSUserActivity *)universalLink;
+
 //根据type，返回对应的channel,并且会配置好相应的信息 (appKey, appScret 等)
 - (LFBChannelBase *)channelWithType:(LFBChannelType)channelType;
 

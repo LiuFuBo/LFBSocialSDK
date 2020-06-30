@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -79,6 +79,8 @@
 		1311AC9F21D22AD2008CA596 /* LFBShareMoudleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareMoudleView.h; sourceTree = "<group>"; };
 		1311ACA021D22AD2008CA596 /* LFBShareMoudleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBShareMoudleView.m; sourceTree = "<group>"; };
 		1311ACA221D22C08008CA596 /* LFBShareDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBShareDefine.h; sourceTree = "<group>"; };
+		1340DDBD24AB04AF001FDA91 /* LFBSocialSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LFBSocialSDKDemo.entitlements; sourceTree = "<group>"; };
+		1340DDBE24AB099A001FDA91 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		134A431E21C88C3800F5B763 /* LFBOpProcessProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBOpProcessProtocol.h; sourceTree = "<group>"; };
 		134A431F21C8904500F5B763 /* LFBChannelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFBChannelManager.h; sourceTree = "<group>"; };
 		134A432021C8904500F5B763 /* LFBChannelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFBChannelManager.m; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 		138510B921C7431600CE6309 /* LFBSocialSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1340DDBD24AB04AF001FDA91 /* LFBSocialSDKDemo.entitlements */,
 				138510BA21C7431600CE6309 /* AppDelegate.h */,
 				138510BB21C7431600CE6309 /* AppDelegate.m */,
 				13B56F6021D35D0A0020EAF0 /* AppDelegate+Scheme.h */,
@@ -322,6 +325,7 @@
 		C5EEE9FBC4BD90DA88D5C774 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1340DDBE24AB099A001FDA91 /* WebKit.framework */,
 				134A435321C8F9C000F5B763 /* Foundation.framework */,
 				134A435121C8F9B200F5B763 /* UIKit.framework */,
 				134A434F21C8F9A500F5B763 /* CoreText.framework */,
@@ -503,22 +507,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LFBSocialSDKDemo/Pods-LFBSocialSDKDemo-resources.sh",
-				"${PODS_ROOT}/TencentOpenAPI/TencentOpenApi_IOS_Bundle.bundle",
-				"${PODS_ROOT}/WeiboSDK/libWeiboSDK/WeiboSDK.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-LFBSocialSDKDemo/Pods-LFBSocialSDKDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TencentOpenApi_IOS_Bundle.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-LFBSocialSDKDemo/Pods-LFBSocialSDKDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LFBSocialSDKDemo/Pods-LFBSocialSDKDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LFBSocialSDKDemo/Pods-LFBSocialSDKDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		835D9069273662D603B56719 /* [CP] Check Pods Manifest.lock */ = {
@@ -773,6 +770,7 @@
 			baseConfigurationReference = 0F51A40CDB0902E785CF0273 /* Pods-LFBSocialSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LFBSocialSDKDemo/LFBSocialSDKDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VUB45YDCB;
@@ -785,6 +783,42 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeChatSDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-l\"Masonry\"",
+					"-l\"WeChatSDK\"",
+					"-l\"WeiboSDK\"",
+					"-l\"c++\"",
+					"-l\"iconv\"",
+					"-l\"sqlite3\"",
+					"-l\"sqlite3.0\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TencentOpenAPI\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yxyt.YXYT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -798,6 +832,7 @@
 			baseConfigurationReference = 0B38CBBC455036B06AE556E3 /* Pods-LFBSocialSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LFBSocialSDKDemo/LFBSocialSDKDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VUB45YDCB;
@@ -810,6 +845,42 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeChatSDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-l\"Masonry\"",
+					"-l\"WeChatSDK\"",
+					"-l\"WeiboSDK\"",
+					"-l\"c++\"",
+					"-l\"iconv\"",
+					"-l\"sqlite3\"",
+					"-l\"sqlite3.0\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TencentOpenAPI\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yxyt.YXYT;
 				PRODUCT_NAME = "$(TARGET_NAME)";

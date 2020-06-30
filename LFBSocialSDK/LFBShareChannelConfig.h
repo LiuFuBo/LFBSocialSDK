@@ -10,8 +10,14 @@
 #import "LFBOpProcessProtocol.h"
 
 @interface LFBShareChannelConfig : NSObject<LFBConfigProtocol>
-
-- (void)setChannelType:(LFBChannelType)channelType appKey:(NSString *)appkey appSecret:(NSString *)appSecret;
+/*!
+* 配置分享参数
+* channelType 分享渠道
+* appkey 平台appkey
+* appSecret 平台appSecret
+* see universalLink 通用连接
+*/
+- (void)setChannelType:(LFBChannelType)channelType appKey:(NSString *)appkey appSecret:(NSString *)appSecret universalLink:(NSString *)universalLink;
 
 @end
 

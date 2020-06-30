@@ -20,17 +20,18 @@
     return self.channelInfoMap[@(channelType)];
 }
 
-- (void)setChannelType:(LFBChannelType)channelType appKey:(NSString *)appkey appSecret:(NSString *)appSecret{
+- (void)setChannelType:(LFBChannelType)channelType appKey:(NSString *)appkey appSecret:(NSString *)appSecret universalLink:(NSString *)universalLink{
     switch (channelType) {
         case LFBChannelTypeWX:
         {
-            if (appkey.length == 0 || appSecret.length == 0) {
+            if (appkey.length == 0 || appSecret.length == 0 || universalLink.length == 0) {
                 return;
             }
             NSDictionary *wxInfo = @{@"appKey": appkey,
                                      @"appSecret": appSecret,
                                      @"normalIcon": @"icon_share_weixin",
-                                     @"selectedIcon": @"icon_share_weixin"
+                                     @"selectedIcon": @"icon_share_weixin",
+                                     @"universalLink":universalLink.length>0 ? universalLink : @""
                                      };
             [self.channelInfoMap setObject:wxInfo forKey:@(LFBChannelTypeWX)];
         }
@@ -43,7 +44,8 @@
             NSDictionary *pyqInfo = @{@"appKey": appkey,
                                       @"appSecret": appSecret,
                                       @"normalIcon": @"icon_share_pengyouquan",
-                                      @"selectedIcon": @"icon_share_pengyouquan"
+                                      @"selectedIcon": @"icon_share_pengyouquan",
+                                      @"universalLink":universalLink.length>0 ? universalLink : @""
                                       };
             [self.channelInfoMap setObject:pyqInfo forKey:@(LFBChannelTypePYQ)];
         }
@@ -55,7 +57,8 @@
             }
             NSDictionary *qqFriendInfo = @{@"appKey":appkey,
                                            @"normalIcon":  @"icon_share_qq",
-                                           @"selectedIcon": @"icon_share_qq"
+                                           @"selectedIcon": @"icon_share_qq",
+                                           @"universalLink":universalLink.length>0 ? universalLink : @""
                                            };
             [self.channelInfoMap setObject:qqFriendInfo forKey:@(LFBChannelTypeQQ)];
         }
@@ -67,7 +70,8 @@
             }
             NSDictionary *qqZoneInfo = @{@"appKey": appkey,
                                          @"normalIcon": @"icon_share_zone",
-                                         @"selectedIcon": @"icon_share_zone"
+                                         @"selectedIcon": @"icon_share_zone",
+                                         @"universalLink":universalLink.length>0 ? universalLink : @""
                                          };
             [self.channelInfoMap setObject:qqZoneInfo forKey:@(LFBChannelTypeQQZone)];
         }
@@ -80,7 +84,8 @@
             NSDictionary *wbInfo = @{@"appKey": appkey,
                                      @"appSecret": appSecret,
                                      @"normalIcon": @"icon_share_weibo",
-                                     @"selectedIcon": @"icon_share_weibo"
+                                     @"selectedIcon": @"icon_share_weibo",
+                                     @"universalLink":universalLink.length>0 ? universalLink : @""
                                      };
             [self.channelInfoMap setObject:wbInfo forKey:@(LFBChannelTypeSinaWB)];
         }

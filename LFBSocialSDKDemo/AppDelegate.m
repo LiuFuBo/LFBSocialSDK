@@ -25,11 +25,11 @@
 - (void)configChannel{
     LFBShareChannelConfig *config = [[LFBShareChannelConfig alloc]init];
     [[LFBChannelManager sharedManager] setDelegate:config];
-    [config setChannelType:LFBChannelTypeWX appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168"];
-    [config setChannelType:LFBChannelTypePYQ appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168"];
-    [config setChannelType:LFBChannelTypeQQ appKey:@"1101053067" appSecret:nil];
-    [config setChannelType:LFBChannelTypeQQZone appKey:@"1101053067" appSecret:nil];
-    [config setChannelType:LFBChannelTypeSinaWB appKey:@"1843267010" appSecret:@"b2f5b2b661babaa3c01b57312decffd7"];
+    [config setChannelType:LFBChannelTypeWX appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168" universalLink:@"www.baidu.com"];
+    [config setChannelType:LFBChannelTypePYQ appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168" universalLink:nil];
+    [config setChannelType:LFBChannelTypeQQ appKey:@"1101053067" appSecret:nil universalLink:nil];
+    [config setChannelType:LFBChannelTypeQQZone appKey:@"1101053067" appSecret:nil universalLink:nil];
+    [config setChannelType:LFBChannelTypeSinaWB appKey:@"1843267010" appSecret:@"b2f5b2b661babaa3c01b57312decffd7" universalLink:nil];
 }
 
 

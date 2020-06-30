@@ -14,6 +14,7 @@
 @property (nonatomic) BOOL hasRegistered;
 @property (nonatomic) NSString *appKey;
 @property (nonatomic) NSString *appSecret;
+@property (nonatomic) NSString *universalLink;
 
 @end
 
@@ -36,6 +37,10 @@
     return [WXApi handleOpenURL:url delegate:self];
 }
 
+- (BOOL)handleOpenUniversalLink:(NSUserActivity *)universalLink {
+    return [WXApi handleOpenUniversalLink:universalLink delegate:self];
+}
+
 - (BOOL)couldLogin{
     [self registerApp];
     return [WXApi isWXAppInstalled] && [WXApi isWXAppSupportApi];
@@ -48,7 +53,7 @@
 
 - (void)registerApp{
     if (!self.hasRegistered) {
-        [WXApi registerApp:self.appKey];
+        [WXApi registerApp:self.appKey universalLink:self.universalLink];
         self.hasRegistered = YES;
     }
 }
@@ -57,6 +62,7 @@
     [super setupWithInfo:info];
     self.appKey = info[@"appKey"];
     self.appSecret = info[@"appSecret"];
+    self.universalLink = info[@"universalLink"];
 }
 
 - (LFBChannelType)channelType
@@ -71,11 +77,12 @@
     authReq.scope = @"snsapi_userinfo";
     authReq.state = @"wx_auth_authorization_state";
     
-    BOOL res = [WXApi sendReq:authReq];
-    if (!res) {
-        NSError *error = LFBChannelError(LFBChannelErrorCodeUnkonwn, @"登陆失败");
-        [self didFail:error];
-    }
+    [WXApi sendReq:authReq completion:^(BOOL success) {
+        if (!success) {
+            NSError *error = LFBChannelError(LFBChannelErrorCodeUnkonwn, @"登陆失败");
+            [self didFail:error];
+        }
+    }];
 }
 
 - (void)shareInfo:(LFBShareInfo *)shareInfo
@@ -86,11 +93,12 @@
             NSError *error = LFBChannelError(LFBChannelErrorCodeUnsupport, @"不支持分享该类型数据");
             [self didFail:error];
         }else{
-            BOOL sendRes = [WXApi sendReq:req];
-            if (!sendRes) {
-                NSError *error = LFBChannelError(LFBChannelErrorCodeUnkonwn, @"分享请求失败");
-                [self didFail:error];
-            }
+            [WXApi sendReq:req completion:^(BOOL success) {
+                if (!success) {
+                    NSError *error = LFBChannelError(LFBChannelErrorCodeUnkonwn, @"分享请求失败");
+                    [self didFail:error];
+                }
+            }];
         }
     }];
 }
