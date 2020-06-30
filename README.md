@@ -391,9 +391,9 @@ Photos.framework&nbsp;
  苹果iOS 13系统版本安全升级，为此WechatOpenSDK在1.8.6版本进行了适配。 1.8.6版本支持Universal Links方式跳转，对openSDK分享进行合法性校验。因为微信SDK的变化，在升级openSDK以后，如果您的LFBSocialSDK不是最新版本，则会导致微信分享调用失败。这里强烈建议您升级LFBSocialSDK到最新版本。
 
  环境要求:
- > 1.SDK版本必须在1.8.6或以上
- > 2.微信版本7.0.7或以上
- > 3.系统版本iOS12或以上
+ > 1.SDK版本必须在1.8.6或以上  
+ > 2.微信版本7.0.7或以上  
+ > 3.系统版本iOS12或以上  
 
 SDK接入指引
 
@@ -439,7 +439,7 @@ SDK接入指引
  ![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_associatedDomain.png)
 
  注意点:在 Associated Domains里面配置的Universal Links必须要以applinks:开头，后面写上域名。
- 例如：applinks:www.test.cn
+ 例如：applinks:www.social.com
 
 
  配置成功以后，咱们就可以来验证一下Universal Links是否生效
@@ -480,7 +480,7 @@ AppDelegate:
 
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRest
 oring>> * __nullable restorableObjects))restorationHandler {
-    return [WXApi handleOpenUniversalLink:userActivity delegate:self];
+    return [[LFBChannelManager sharedManager] handleOpenUniversalLink:userActivity];
 }
 
 ```
@@ -489,7 +489,7 @@ SceneDelegate:
 
 ```
 - (void)scene:(UIScene *)scene continueUserActivity:(NSUserActivity *)userActivity {
-    [WXApi handleOpenUniversalLink:userActivity delegate:self];
+    [[LFBChannelManager sharedManager] handleOpenUniversalLink:userActivity];
 }
 
 ```
