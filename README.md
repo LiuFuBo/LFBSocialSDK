@@ -35,7 +35,7 @@ pod 'LFBSocialSDK'
 ### 添加项目配置
 
 在Other Linker Flags加入-Objc, 注意不要手动写为-Objc
-![image](https://github.com/LiuFuBo1991/LFBSocialSDK/blob/master/imageFolder/icon_share_other_linke.jpeg)
+![image](http://brandonliu.pub/icon_share_other_linke.jpeg)
 
 -Objc属于链接必备参数，如果不加此项，会导致库文件无法被正确链接，SDK无法正常运行
 
@@ -44,7 +44,7 @@ pod 'LFBSocialSDK'
 
 在General下的Linked Frameworks and Libraries添加系统库
 
-![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_libraries.png)
+![image](http://brandonliu.pub/icon_share_libraries.png)
 
 加入以下系统库
 
@@ -243,7 +243,7 @@ Photos.framework&nbsp;
 
 * 添加URL Types可工程设置面板设置
 
-![image](https://github.com/LiuFuBo1991/LFBSocialSDK/blob/master/imageFolder/icon_share_scheme.jpeg)
+![image](http://brandonliu.pub/icon_share_scheme.jpeg)
 
 
 ### 权限配置
@@ -425,18 +425,18 @@ SDK接入指引
 
  2.微信开放平台配置Universal Links
 
- ![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_universal_set.png)
+ ![image](http://brandonliu.pub/icon_share_universal_set.png)
 
  3.登录苹果开发者后台，在设置证书的页面找到 Identifiers -> App ID（设置包名）里，在对应的BundleId下勾选 Associated Domains如下图，然后保存设置，然后重新生成配置文件。
-  ![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_appstore_doam.png)
+  ![image](http://brandonliu.pub/icon_share_appstore_doam.png)
 
  4.在 Xcode 中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏下的“URL type“添加“URL scheme”为你所注册的应用程序 id：在“LSApplicationQueriesSchemes“添加weixin 和weixinULAPI（如下图所示）
  
- [image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_schem_set.png)
+ [image](hhttp://brandonliu.pub/icon_share_schem_set.png)
  
  5.打开Associated Domains开关，将Universal Links域名加到配置上
 
- ![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_associatedDomain.png)
+ ![image](http://brandonliu.pub/icon_share_associatedDomain.png)
 
  注意点:在 Associated Domains里面配置的Universal Links必须要以applinks:开头，后面写上域名。
  例如：applinks:www.social.com
@@ -450,7 +450,7 @@ SDK成功验证指引
 
  首先，确认微信(7.0.7或以上版本)的Universal Links在设备上正常，以确保openSDK与微信双向使用Universal Links通信，Safari输入您配置好的通用连接，下拉查看是否有打开微信入口(如下图)。若无入口，可能是App的Universal Links配置有问题，或者网络状态异常。
 
-![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_universal_wechat.png)
+![image](http://brandonliu.pub/icon_share_universal_wechat.png)
 
 2.确保App的Universal Links配置成功
 
@@ -459,14 +459,14 @@ SDK成功验证指引
 
 当用户首次使用新版本SDK发起分享时，将会出现如下交互流程：从App拉起微信-出现“正在连接”页面-返回App-重新打开微信。以上是新的安全验证流程，每个用户在首次使用时会出现上述跳转。（如同一用户多次使用分享都出现跳转，请按照以下接入指引，检查Universal Links配置）
 
-![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_ercilianjie_wechat.png)
+![image](http://brandonliu.pub/icon_share_ercilianjie_wechat.png)
 
 
 4.如App有使用微信授权登录功能，确认授权不出现二次确认弹窗
 
 授权登录如出现以下二次确认弹窗，原因是微信无法通过App提供的Universal Links返回导致，很可能是App的Universal Links不生效，请按照接入指引检查Universal Links配置
 
-![image](https://raw.githubusercontent.com/LiuFuBo1991/LFBSocialSDK/master/imageFolder/icon_share_login_frae.png)
+![image](http://brandonliu.pub/icon_share_login_frae.png)
 
 使用手则：
 
