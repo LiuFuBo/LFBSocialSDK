@@ -426,7 +426,7 @@ SDK接入指引
 
  2.微信开放平台配置Universal Links
 
- ![image](http://brandonliu.pub/icon_share_universal_set.png)
+ ![image](http://brandonliu.pub/icon_share_universal_sets.png)
 
  3.登录苹果开发者后台，在设置证书的页面找到 Identifiers -> App ID（设置包名）里，在对应的BundleId下勾选 Associated Domains如下图，然后保存设置，然后重新生成配置文件。
   ![image](http://brandonliu.pub/icon_share_appstore_doam.png)
