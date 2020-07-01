@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:tapi.eyxyt.com</string>
+		<string>applinks:api.eyxyt.com</string>
 	</array>
 </dict>
 </plist>

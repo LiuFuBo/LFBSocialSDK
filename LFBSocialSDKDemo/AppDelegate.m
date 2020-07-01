@@ -25,7 +25,7 @@
 - (void)configChannel{
     LFBShareChannelConfig *config = [[LFBShareChannelConfig alloc]init];
     [[LFBChannelManager sharedManager] setDelegate:config];
-    [config setChannelType:LFBChannelTypeWX appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168" universalLink:@"https://tapi.eyxyt.com"];
+    [config setChannelType:LFBChannelTypeWX appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168" universalLink:@"https://api.eyxyt.com"];
     [config setChannelType:LFBChannelTypePYQ appKey:@"wx512bbc9e05bf9db0" appSecret:@"1d44d80947bb3821506e440116f73168" universalLink:nil];
     [config setChannelType:LFBChannelTypeQQ appKey:@"1101053067" appSecret:nil universalLink:nil];
     [config setChannelType:LFBChannelTypeQQZone appKey:@"1101053067" appSecret:nil universalLink:nil];
