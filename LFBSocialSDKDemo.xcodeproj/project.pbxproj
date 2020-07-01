@@ -773,6 +773,7 @@
 				CODE_SIGN_ENTITLEMENTS = LFBSocialSDKDemo/LFBSocialSDKDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 				DEVELOPMENT_TEAM = 6VUB45YDCB;
 				INFOPLIST_FILE = LFBSocialSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -784,6 +785,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeChatSDK",
 				);
+				MARKETING_VERSION = 1.0.6;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -835,6 +837,7 @@
 				CODE_SIGN_ENTITLEMENTS = LFBSocialSDKDemo/LFBSocialSDKDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 				DEVELOPMENT_TEAM = 6VUB45YDCB;
 				INFOPLIST_FILE = LFBSocialSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -846,6 +849,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeChatSDK",
 				);
+				MARKETING_VERSION = 1.0.6;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

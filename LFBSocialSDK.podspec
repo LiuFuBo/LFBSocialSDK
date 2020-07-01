@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   # 库名字
   s.name         = "LFBSocialSDK"
   # 库的版本
-  s.version      = "1.0.4"
+  s.version      = "1.0.6"
   # 库摘要
   s.summary      = "share framework for iOS (powerful，superior performance)"
   # 库描述
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
 
     
   # 如果库中依赖其他的三方库，可以添加这些依赖库
-  s.dependency "WechatOpenSDK", "~> 1.8.4"
+  s.dependency "WechatOpenSDK", "~> 1.8.7.1"
   s.dependency "TencentOpenAPI", "~> 1.0.0"
   s.dependency "WeiboSDK", "~> 3.1.3"
   s.dependency "Masonry", "~> 1.1.0"
