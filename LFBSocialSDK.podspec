@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
                   DESC
 
   # 远程仓库地址,即GitHub地址，或者你使用的其他Gitlab地址
-  s.homepage     = "https://github.com/LiuFuBo1991/LFBSocialSDK"
+  s.homepage     = "https://github.com/LiuFuBo/LFBSocialSDK"
   
   # MIT许可证 (The MIT License),软件授权条款
   s.license      = "MIT"
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
 
   # 下载地址，远程仓库的 GitHub下载地址(clone 地址), 使用.git结尾
   #  如果使用版本号做为tag那么不能频繁的打tag，必须要保持版本号和tag一致，否在拉取到的将是版本号作为tag对应提交的内容
-  s.source       = { :git => "https://github.com/LiuFuBo1991/LFBSocialSDK.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/LiuFuBo/LFBSocialSDK.git", :tag => "#{s.version}" }
 
 
   # 库文件在仓库中的相对路径
