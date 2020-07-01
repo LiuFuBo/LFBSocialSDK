@@ -10,6 +10,7 @@ LFBSocialSDK是一款第三方分享框架，提供了优雅便捷的调用方�
 ## LFBSocialSDK提供了哪些功能?
 
 - [x] 支持微信、朋友圈、小程序、QQ、QQZone、新浪微博分享,并且后续会持续增加分享平台
+- [x] 支持微信开放平台适配iOS13、配置通用链接universal Link
 - [x] 支持第三方的登陆功能
 - [x] 支持个人自定义分享视图以及框架分享视图两种UI选择
 - [x] 配置哪些平台，当使用框架展示视图时就展示你配置过的平台
@@ -36,7 +37,7 @@ pod 'LFBSocialSDK'
 
 在Other Linker Flags加入-Objc, 注意不要手动写为-Objc
 
-![image](http://brandonliu.pub/icon_share_other_linkes.png)
+![image](http://brandonliu.pub/icon_share_other_linker.png)
 
 -Objc属于链接必备参数，如果不加此项，会导致库文件无法被正确链接，SDK无法正常运行
 
@@ -447,7 +448,7 @@ SDK接入指引
 
 SDK成功验证指引
 
- 1.确认微信的Universal Links能正常访问
+ 1.确认微信的 `Universal Links` 能正常访问
 
  首先，确认微信(7.0.7或以上版本)的Universal Links在设备上正常，以确保openSDK与微信双向使用Universal Links通信，Safari输入您配置好的通用连接，下拉查看是否有打开微信入口(如下图)。若无入口，可能是App的Universal Links配置有问题，或者网络状态异常。
 
@@ -496,6 +497,7 @@ SceneDelegate:
 
 - v1.0.4 修复了小程序分享预览图和缩略图过大,导致分享失败的问题
 - v1.0.5 统一提供各平台是否支持分享的API接口
+- v1.0.6 升级微信开发平台SDK版本，支持通过链接 `universal Link` 配置
 
 
 ### 联系 
